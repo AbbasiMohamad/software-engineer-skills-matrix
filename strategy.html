@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset=UTF-8>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <script src="functions.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="main">
+
+  <div class="nav">
+    <a href="index.html">
+      <span class="item">TECHNICAL</span>
+    </a>
+    <a href="communication.html">
+      <span class="item">COMMUNICATION, FEEDBACK, COLLABORATION & COMMUNITY</span>
+    </a>
+    <a href="leadership.html">
+      <span class="item">
+        LEADERSHIP
+      </span>
+    </a>
+    <a href="delivery.html">
+      <span class="item">
+        DELIVERY &AMP; EFFECTIVENESS
+      </span>
+    </a>
+    <a href="strategy.html">
+      <span class="item selected">STRATEGY</span>
+    </a>
+  </div>
+
+  <!--header-->
+  <div class="header">
+    <div class="skill-header">
+
+      <h1>Strategy</h1>
+      <a href="#critical" onclick="changeSkill('critical')">
+        <div class="competencies selected" id="critical-header">
+          <div class="headerbox">
+            <div class=header1>Critical Thinking</div>
+          </div>
+          <div class=summary>
+            Analyses problems with pragmatic considerations to best practice, future direction
+            and impact of solutions to maintainability, users, goals and opportunities.</div>
+          <div class=sub-skills>
+            <span class="text">&#x25D7;&nbsp;Holistic Thinking</span>
+            <span class="text">&#x25D7;&nbsp;Technical Analysis</span>
+          </div>
+        </div>
+      </a>
+      <a href="#biz" onclick="changeSkill('biz')">
+        <div class="competencies" id="biz-header">
+          <div class="headerbox">
+            <div class=header1>Business Impact</div>
+          </div>
+          <div class=summary>Alignment and ownership on the company strategy</div>
+          <div class=sub-skills>
+            <span class="text">&#x25D7;&nbsp;Understanding Why</span>
+            <span class="text">&#x25D7;&nbsp;Define Strategy</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#product" onclick="changeSkill('product')">
+        <div class="competencies" id="product-header">
+          <div class="headerbox">
+            <div class=header1>Product Impact</div>
+          </div>
+          <div class=summary>Understanding user needs and opportunities that product features create and delighting customers</div>
+          <div class=sub-skills>
+            <span class="text">&#x25D7;&nbsp;Product Thinking</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="main">
+    <!--Junior-->
+    <div class="row">
+      
+      <div class="left col">
+        <span class=title>E1: Engineer I</span>
+        <p><span class=focus>FOCUS: <br/>Within Task</span></p>
+        <a href="https://tinyurl.com/e360-engineer-i" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+      <div class="middle" id="junior-skills">
+        <div class="critical">
+          <span class="pill">Critical Thinking</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Holistic Thinking</span>
+              Approaches tasks with a view to develop an understanding on how the task fits into the feature, the users impacted,
+              the flows impacted and developing the understanding of the feature's purpose
+            </li>
+            <li>
+              <span class="highlight underline">Technical Analysis</span>
+              Collaborates with team members to produce smaller scope designs.<br/>
+              Aims to think about what technical changes are needed for a task, acceptance criteria, and seeks to follow best practice.<br/>
+              Understands how a few systems fit together at a high level and each team's responsibility for their piece of functionality
+            </li>
+          </ul>
+        </div>
+
+        <div class="biz">
+          <span class="pill">Business Impact</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understand "WHY"</span>
+              Has a basic understanding on the team's domain and how work in this domain relates to the team's objectives and deliverables
+            </li>
+            <li>
+              <span class="highlight underline">Defining Strategy</span>
+              Understands the organisation's company strategy and how the engineering aligns to this.
+            </li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <span class="pill">Product Impact</span>
+          <ul>
+            <li>Understands or grasps how the product works and the overall purpose and impact of the product</li>
+          </ul>
+        </div>
+        <a class="link" id="show-junior-all" onclick="showAll('junior')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-junior-all" onclick="hideAll('junior')">+ Hide Other Competencies</a>
+      </div>
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="junior-show" onclick="showExamples('junior')">+ show examples</a>
+        <a class="hide link" id="junior-hide" onclick="hideExamples('junior')">- hide examples</a>
+        <ul class="hide" id="junior-examples">
+          <li>Asked questions on a project to understand the purpose of the project</li>
+          <li>Asked for help in defining the GraphQL API for a task and checks if best practice is being followed</li>
+          <li>Broke down a task and the ordered these sub-tasks for delivery</li>
+          <li>Identified additional scenarios to cover on a task</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--Mid Level-->
+    <div class="row even">
+      
+      <div class="left col">
+        <span class=title>E2: Engineer II</span>
+        <p><span class=focus>FOCUS: <br/>Within Epic</span></p>
+        <a href="https://tinyurl.com/e360-engineer-ii" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+
+      <div class="middle" id="mid-skills">
+        <div class="critical">
+          <span class="pill">Critical Thinking</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Holistic Thinking</span>
+              Understands the tasks that fits into a feature, the users impacted, the flows impacted and understands of the feature's purpose.<br/>
+              Developing an ability to analyse the bigger picture and identify non-happy paths.
+            </li>
+            <li>
+              <span class="highlight underline">Technical Analysis</span>
+              Keeps context in mind when defining technical design for a feature or change.<br/>
+              Thinks about what technical changes are needed for a set of tasks, acceptance criteria,
+              seeks to follow best practice and impact of their design on other parts of the system.<br/>
+              Designs are pragmatic, simple and recommend the most appropriate technology.<br/>
+              Understands the team's context, how the overall system fits together at a high level and each team's responsibility for their piece of functionality
+            </li>
+          </ul>
+        </div>
+
+        <div class="biz">
+          <span class="pill">Business Impact</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understand "WHY"</span>
+              Understands the team's domain, how work in this domain relates to the team's objectives
+              and deliverables and how it contributes to overall business strategy and how technical strategy maps to this.
+            </li>
+            <li>
+              <span class="highlight underline">Defining Strategy</span>
+              Understands the organisation's company strategy and how the engineering strategy aligns to this.<br/>
+              Attempts to feed into squad OKRs that align to these strategies when the team is setting squad OKRs
+            </li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <span class="pill">Product Impact</span>
+          <ul>
+            <li>Understands product area of focus, how it fits into the overall business, and sometimes makes improvement suggestions for it.</li>
+          </ul>
+        </div>
+        <a class="link" id="show-mid-all" onclick="showAll('mid')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-mid-all" onclick="hideAll('mid')">+ Hide Other Competencies</a>
+      </div>
+
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="mid-show" onclick="showExamples('mid')">+ show examples</a>
+        <a class="hide link" id="mid-hide" onclick="hideExamples('mid')">- hide examples</a>
+        <ul class="hide" id="mid-examples">
+          <li>Suggested refactoring a module as part of an epic</li>
+          <li>Analysed the data in the database for the epic and noted different cases to handle</li>
+          <li>Found code that was re-used on a few flows and added these to regression tests for an epic</li>
+          <li>Suggested MVP version of their task to test a feature earlier with customers</li>
+          <li>Created a spike to quickly prototype a feature to better understand the impacts and flows</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--Senior-->
+    <div class="row">
+      
+      <div class="left col">
+        <span class=title>E3: Senior<br/>Engineer</span>
+        <p><span class=focus>FOCUS: <br/>Within Team</span></p>
+        <a href="https://tinyurl.com/e360-engineer-iii" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+
+      <div class="middle" id="senior-skills">
+        <div class="critical">
+          <span class="pill">Critical Thinking</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Holistic Thinking</span>
+              Has a thorough understanding of a feature, the users impacted, the flows impacted and feature's purpose.<br/>
+              Has the ability to analyse the bigger picture, identify and prioritise non-happy paths.<br/>
+              Aims to consider more than one domain in this analysis.
+            </li>
+            <li>
+              <span class="highlight underline">Technical Analysis</span>
+              Creates project proposals and design that have considerable impact, or touch multiple systems.<br/>
+              Technical designs are clear, well thought out, and considers dependencies, failure states, maintainability, testability and ease of support.<br/>
+              Business context is kept in mind when proposing architectural decisions.<br/>
+              Also considers scalability, reliability and performance of systems/contexts affected when defining technical designs.
+            </li>
+          </ul>
+        </div>
+
+        <div class="biz">
+          <span class="pill">Business Impact</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understand "WHY"</span>
+              Has a thorough understanding of the team's domain, how work in this domain relates to the team's objectives and deliverables
+              and how it contributes to overall business strategy and how technical strategy maps to this.<br/>
+              Has a basic understanding of adjacent teams' business domains.
+            </li>
+            <li>
+              <span class="highlight underline">Defining Strategy</span>
+              Understands the organisation's company strategy and how the engineering strategy aligns to this.<br/>
+              Usually involved in discussions about the implications for their team.  Feeds into defining and measuring OKRs for their squad when the squad are setting OKRs.<br/>
+              May participate in discussions and providing input into technical direction of parts of the engineering strategy.
+            </li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <span class="pill">Product Impact</span>
+          <ul>
+            <li>
+              Thoroughly understands the business model in relation to their current product focus area.<br/>
+              Sometimes participates in roadmap feedback with product team.<br/>
+              Looks for opportunities to simplify product & technical design.
+            </li>
+          </ul>
+        </div>
+        <a class="link" id="show-senior-all" onclick="showAll('senior')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-senior-all" onclick="hideAll('senior')">+ Hide Other Competencies</a>
+      </div>
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="senior-show" onclick="showExamples('senior')">+ show examples</a>
+        <a class="hide link" id="senior-hide" onclick="hideExamples('senior')">- hide examples</a>
+        <ul class="hide" id="senior-examples">
+          <li>Researched the effort to migrate from one framework to another framework, considering pros, cons and effort.</li>
+          <li>Created a migration plan for legacy data and broke this into phases to avoid impact on production</li>
+          <li>Considered the options and effort of work and long term strategy when building a feature in their domain.</li>
+          <li>Asked for more context on the upcoming projects in the roadmap</li>
+          <li>Added dashboards to measure and monitor behaviours of customers</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--Team Lead-->
+    <div class="row even">
+      
+      <div class="left col">
+        <span class=title>E4: Development Lead</span>
+        <p><span class=focus>FOCUS: <br/>Within Team and Stakeholders</span></p>
+        <a href="https://tinyurl.com/e360-devlead" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+
+      <div class="middle" id="teamlead-skills">
+        <div class="critical">
+          <span class="pill">Critical Thinking</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Holistic Thinking</span>
+              Has a thorough understanding of a feature, the users impacted, the flows impacted and feature's
+              purpose.<br/>
+              Leads the team in analysing the bigger picture, identifying and prioritising non-happy paths.
+              Considers across domains when analysing the bigger picture.
+            </li>
+            <li>
+              <span class="highlight underline">Technical Analysis</span>
+              Creates and guides the team on project proposals and design that have considerable impact, or touch
+              multiple systems.<br/>
+              Technical designs are clear, well thought out, and considers dependencies, failure states,
+              maintainability, testability and ease of support.<br/>
+              Business context is kept in mind when proposing architectural decisions.<br/>
+              Also considers scalability, reliability and performance of systems/contexts affected when defining
+              technical designs.<br/>
+              Seeks alignment on overall technical architecture direction.
+            </li>
+          </ul>
+        </div>
+
+        <div class="biz">
+          <span class="pill">Business Impact</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understand "WHY"</span>
+              Has a thorough understanding of the team's domain, strategy, how it maps to overall market trends,
+              and how it contributes to overall business strategy and how technical strategy maps to this.<br/>
+              Has a thorough understanding of adjacent teams' strategies and how they map to their team and interaction points.
+            </li>
+            <li>
+              <span class="highlight underline">Defining Strategy</span>
+              Collaborates and decides on their team's engineering work and measuring these based on organisation's engineering strategy,
+              together with their teammates and senior engineers. Sometimes involved in work on organisational engineering strategy.
+            </li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <span class="pill">Product Impact</span>
+          <ul>
+            <li>
+              Evaluates and creates new product features in collaboration with the product team.<br/>
+              Regularly participates in the creation of the team roadmap and ensuing feedback.<br/>
+              Simplifies product and technical design through proactive conversations.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="teamlead-show" onclick="showExamples('teamlead')">+ show examples</a>
+        <a class="hide link" id="teamlead-hide" onclick="hideExamples('teamlead')">- hide examples</a>
+        <ul class="hide" id="teamlead-examples">
+          <li>
+            Led the team to consider the impact of a feature on each user persona.
+          </li>
+          <li>
+            Identified when there was a gap in the technical design of the squad, where security implication had been missed.
+          </li>
+          <li>
+            Guided the team to consider the implications to legacy data and flows when refactoring an area of the codebase.
+          </li>
+          <li>
+            Guided the team to think about Key Results of a feature and how this could be measured.
+          </li>
+          <li>
+            Analysed the upcoming epics and highlighted risks to be researched by the team upfront
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--Engineering Manager-->
+    <div class="row">
+      
+      <div class="left col">
+        <span class=title>E5: Engineering Manager</span>
+        <p><span class=focus>FOCUS: <br/>Across Several Teams</span></p>
+        <a href="https://tinyurl.com/e360-eng-mgr" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+
+      <div class="middle" id="em-skills">
+        <div class="critical">
+          <span class="pill">Critical Thinking</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Holistic Thinking</span>
+              Guides across teams on developing a thorough understanding of a feature, the users impacted,
+              the flows impacted and feature's purpose.<br/>
+              Guides across teams in analysing the bigger picture,
+              identifying gaps and dependencies across domains when analysing the bigger picture and aligning to the company goals.
+            </li>
+            <li>
+              <span class="highlight underline">Technical Analysis</span>
+              Guides teams on technical designs for larger and more complex technical initiatives and projects that consider
+              dependencies, maintainability, failure states, testability, ease of support, performance and reliability
+              across systems and contexts with alignment on the technical architecture design.<br/>
+              Sets and champions best practice within the company.<br/>
+              Identifies and prioritizes major areas of improvement in the architecture.<br/>
+              Simplifies architecture to address complex problems.
+            </li>
+          </ul>
+        </div>
+
+        <div class="biz">
+          <span class="pill">Business Impact</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understand "WHY"</span>
+              Has a thorough understanding of several team's domains, and how they contribute to overall business strategy and alignment to the technical strategy.
+            </li>
+            <li>
+              <span class="highlight underline">Defining Strategy</span>
+              Works with VP Engineering and VP Product on strategic organisational decisions and plans.<br/>
+              Leads cross-team strategic efforts, influencing decisions to achieve cross-team alignment on major goals.
+            </li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <span class="pill">Product Impact</span>
+          <ul>
+            <li>
+              Recognises product opportunities and differentiators in relation to the competition.<br/>
+              Often helps refine roadmaps across teams based on technical strategy & constraints.<br/>
+              Helps to define & create new product abilities by changing technical strategy or constraints.
+            </li>
+          </ul>
+        </div>
+        <a class="link" id="show-em-all" onclick="showAll('em')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-em-all" onclick="hideAll('em')">+ Hide Other Competencies</a>
+      </div>
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="em-show" onclick="showExamples('em')">+ show examples</a>
+        <a class="hide link" id="em-hide" onclick="hideExamples('em')">- hide examples</a>
+        <ul class="hide" id="em-examples">
+          <li>Lead and align engineering team with the company's vision</li>
+          <li>Improve engineering quality and efficiency (e.g. improve workflow, code review, etc.)</li>
+          <li>Create positive team culture (e.g. curious, mutually challenging, collaborative)</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--VP Eng-->
+    <div class="row even">
+      
+      <div class="left col">
+        <span class=title>E6: VP Engineering</span>
+        <p><span class=focus>FOCUS: <br/>Across Organisation</span></p>
+      </div>
+
+      <div class="middle" id="vp-skills">
+        <div class="critical">
+          <span class="pill">Critical Thinking</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Holistic Thinking</span>
+              Analyses the bigger picture aligning to the company goals and strategy.<br/>
+              Guides the engineering organisation on thinking across the entire platform.
+            </li>
+            <li>
+              <span class="highlight underline">Technical Analysis</span>
+              Has a view across the majority of the architecture and sets direction on how engineering can align to the company's vision and growth.<br/>
+              Takes a long term view of the architecture direction. Brings awareness where processes, architecture, organisation are not optimal
+              and drives the team and leadership to make changes proactively to address them.
+            </li>
+          </ul>
+        </div>
+
+        <div class="biz">
+          <span class="pill">Business Impact</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understand "WHY"</span>
+              Has a <span class="highlight">thorough understanding of the entire business</span>, including individual domains,
+              and how they contribute to the overall business strategy and <span class="highlight">mapping technical strategy</span> to this.
+            </li>
+            <li>
+              <span class="highlight underline">Defining Strategy</span>
+              Leads strategic organisational decisions and plans.<br/>
+              Contributes to <span class="highlight">organisation strategic planning.</span>
+              <br/>Provides <span class="highlight">expertise and recommendations</span> to CEO and other leaders
+            </li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <span class="pill">Product Impact</span>
+          <ul>
+            <li>
+              Works with <span class="highlight">VP Product and LT</span> to define the product roadmap.
+              <br/>Identifies <span class="highlight">technical complexities or limitations</span> that may impact product <span class="highlight">long-term</span> product plans
+              <br/>Brings <span class="highlight">engineering and security considerations</span> to product and strategic planning discussions
+              <br/><span class="highlight">Leads the establishment of the engineering and platform roadmap</span>
+            </li>
+          </ul>
+        </div>
+        <a class="link" id="show-vp-all" onclick="showAll('vp')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-vp-all" onclick="hideAll('vp')">+ Hide Other Competencies</a>
+      </div>
+
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="vp-show" onclick="showExamples('vp')">+ show examples</a>
+        <a class="hide link" id="vp-hide" onclick="hideExamples('vp')">- hide examples</a>
+        <ul class="hide" id="vp-examples">
+          <li>Lead and align all of engineering with the company's vision</li>
+          <li>Contributed to company strategy via strategy business cases and planning discussions.</li>
+          <li>Put in place measures to ensure all parts of the engineering organisation operate at their best productivity and efficiency.</li>
+        </ul>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

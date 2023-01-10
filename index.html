@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset=UTF-8>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <script src="functions.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="main">
+
+  <div class="nav">
+    <a href="index.html">
+      <span class="item selected">TECHNICAL</span>
+    </a>
+    <a href="communication.html">
+      <span class="item">COMMUNICATION, FEEDBACK, COLLABORATION & COMMUNITY</span>
+    </a>
+    <a href="leadership.html">
+      <span class="item">
+        LEADERSHIP
+      </span>
+    </a>
+    <a href="delivery.html">
+      <span class="item">
+        DELIVERY &AMP; EFFECTIVENESS
+      </span>
+    </a>
+    <a href="strategy.html">
+      <span class="item">STRATEGY</span>
+    </a>
+  </div>
+
+  <!--header-->
+
+  <div class="header">
+    <div class="skill-header">
+
+      <h1>TECHNICAL</h1>
+      <a href="#reliable" onclick="changeSkill('reliable')">
+        <div class="competencies selected" id="reliable-header">
+          <div class="headerbox">
+            <div class=header1>Reliable &amp; Robust Systems</div>
+          </div>
+          <div class=summary>Building and maintaining stable, reliable and robust systems</div>
+          <div class=sub-skills>
+            <span class="text">&#x25D7;&nbsp;Security</span>
+            <span class="text">&#x25D7;&nbsp;Distributed Systems
+            </span>
+            <span class="text">&#x25D7;&nbsp;Observability &amp; Reliability
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#troubleshooting" onclick="changeSkill('troubleshooting')">
+        <div class="competencies" id="troubleshooting-header">
+          <div class="headerbox">
+            <span class=header1>Troubleshooting</span>
+          </div>
+          <div class=summary>Ability to troubleshoot systems and diagnose issues<br/></div>
+          <div class="sub-skills">
+            <span class="text">&#x25D7;&nbsp;Debugging</span>
+            <span class="text">&#x25D7;&nbsp;Incident Response</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#architecture" onclick="changeSkill('architecture')">
+        <div class="competencies" id="architecture-header">
+          <div class="headerbox">
+            <span class=header1>Technical Design &amp; Architecture</span>
+          </div>
+          <div class=summary>Design, build and analyse technical architecture aligned to the needs of the company and
+            best practices</div>
+          <div class="sub-skills">
+            <span class="text">&#x25D7;&nbsp;Understanding Code</span>
+            <span class="text">&#x25D7;&nbsp;API Design</span>
+            <span class="text">&#x25D7;&nbsp;Design Patterns</span>
+            <span class="text">&#x25D7;&nbsp;Software Architecture</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#quality" onclick="changeSkill('quality')">
+        <div class="competencies" id="quality-header">
+          <div class="headerbox">
+            <span class=header1>Quality</span>
+          </div>
+          <div class=summary>
+            Embodies and promotes practices to ensure quality in the work we do, for each individual and their team
+          </div>
+          <div class="sub-skills">
+            <span class="text">&#x25D7;&nbsp;Code Reviews</span>
+            <span class="text">&#x25D7;&nbsp;User Centric</span>
+            <span class="text">&#x25D7;&nbsp;Testing</span>
+            <span class="text">&#x25D7;&nbsp;Best Practice</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#craft" onclick="changeSkill('craft')">
+        <div class="competencies" id="craft-header">
+          <div class="headerbox">
+            <span class=header1>Craft</span>
+          </div>
+          <div class=summary>
+            Develops expertise in technical foundations and chosen technical expertise
+          </div>
+          <div class="sub-skills">
+            <span class="text">&#x25D7;&nbsp;Data Structures &amp; Algorithms</span>
+            <span class="text">&#x25D7;&nbsp;Writing Code</span>
+            <span class="text">&#x25D7;&nbsp;Technical Expertise</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="roadmaps">
+      Roadmaps: <a href="frontend-roadmap.pdf" target="_blank" class="link underline">Frontend Roadmap</a> | <a href="backend-roadmap.pdf" class="link underline" target="_blank">Backend Roadmap</a>
+      | Source: <a href="https://tinyurl.com/e360-competencies" class="link underline">Competencies Matrix</a>
+      | Feedback: <a href="https://forms.gle/9mSZsdaCTgw4NFJX8" class="link underline">Feedback Form</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <!--Junior-->
+    <div class="row">
+      <div class="left col">
+        <span class=title>E1: Engineer I</span>
+        <p><span class=focus>FOCUS: <br/>Within Task</span></p>
+        <a href="https://tinyurl.com/e360-engineer-i" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+      <div class="middle" id="junior-skills">
+        <div class="reliable">
+          <span class="pill">Reliable &amp; Robust Systems</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Security</span><br/> Developing an understanding of the importance of security and some security
+              considerations
+            </li>
+            <li>
+              <span class="highlight underline">Distributed Systems</span><br/> Developing an understanding of the application(s) they work on in the tech stack.
+            </li>
+            <li>
+              <span class="highlight underline">Reliability &amp; Observability</span><br/> N/A (not applicable at this level)
+            </li>
+          </ul>
+        </div>
+
+        <div class="troubleshooting">
+          <span class="pill">Troubleshooting</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Debugging</span><br/>Understands the basics of debugging and the tools used for it.
+            </li>
+            <li>
+              <span class="highlight underline">Incident Response</span><br/>Learning to detect when there is an incident vs what is a lower priority bug
+            </li>
+          </ul>
+        </div>
+
+        <div class="architecture">
+          <span class="pill">Technical Design &amp; Architecture</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understanding Code</span><br/>
+              Gains context within team's domain with help from more senior engineers.
+            </li>
+            <li>
+              <span class="highlight underline">API Design</span><br/>
+              Understands API interfaces for GraphQL and REST APIs. Understands different formats used in an API.
+              Able to query and update data via an API.
+            </li>
+            <li><span class="highlight underline">Design Patterns</span><br/>Developing an understanding of different patterns used in the codebase</li>
+            <li><span class="highlight underline">Software Architecture</span><br/>Aware of domain architecture and designs basic functions to avoid code duplication and interface-breaking changes.</li>
+          </ul>
+        </div>
+
+        <div class="quality">
+          <span class="pill">Quality</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Code Reviews</span><br/>
+              Learning to create reasonable sized PRs with the description of changes and testing conducted. Can read through PRs and provides respectful comments in PRs. May need help breaking down PRs and iterating from PR suggestions.
+            </li>
+            <li>
+              <span class="highlight underline">User Centric</span><br/>
+              Strives to deliver work with the end-users in mind and understands the value of tasks.
+            </li>
+            <li>
+              <span class="highlight underline">Testing</span><br/>
+              Understands the testing pyramid, writes unit tests in accordance with it, with help from othes at times. Always tests expected edge cases and errors as well as the happy path.
+            </li>
+            <li><span class="highlight underline">Best Practice</span><br/>Approaches tasks with the view of following best practice. May need help from others on understanding which standards to follow.</li>
+          </ul>
+        </div>
+
+        <div class="craft">
+          <span class="pill">Craft</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Data Structures &amp; Algorithms</span><br/>
+              Developing an understanding of different data structures and when to use different
+              structures. Developing a basic understanding of some algorithms that might be applied and complexity
+              (e.g. looping through elements is O(n) complexity)
+            </li>
+            <li><span class="highlight underline">Writing Code</span><br/>Writes code with testability, readability, edge cases, and errors in mind.</li>
+            <li><span class="highlight underline">Technical Expertise</span><br/>Starts with learning the basics of the tech stack required within tasks.</li>
+          </ul>
+        </div>
+        <a class="link" id="show-junior-all" onclick="showAll('junior')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-junior-all" onclick="hideAll('junior')">+ Hide Other Competencies</a>
+      </div>
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="junior-show" onclick="showExamples('junior')">+ show examples</a>
+        <a class="hide link" id="junior-hide" onclick="hideExamples('junior')">- hide examples</a>
+        <ul class="hide" id="junior-examples">
+          <li>Adds unit tests for work. Uses mocks for API responses</li>
+          <li>Implemented sticky footer component</li>
+          <li>Added new tables and fields to the database</li>
+          <li>Updated code to query data from GraphQL</li>
+          <li>Validated input fields for malicious content and strips tags from input entered</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--Mid Level-->
+    <div class="row even">
+
+      <div class="left col">
+        <span class=title>E2: Engineer II</span>
+        <p><span class=focus>FOCUS: <br/>Within Epic</span></p>
+        <a href="https://tinyurl.com/e360-engineer-ii" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+      <div class="middle" id="mid-skills">
+        <div class="reliable">
+          <span class="pill">Reliable &amp; Robust Systems</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Security</span><br/>
+              Understands the importance of security.
+              <span class="highlight">
+                Utilizes this knowledge to ask for help on making decisions that may have security implications.
+              </span>
+            </li>
+            <li>
+              <span class="highlight underline">Distributed Systems</span><br/>
+              <span class="highlight">
+                Understands how the applications within their context integrate with eachother.
+              </span>
+              Developing a <span class="highlight">deeper understanding</span>of slices of the <span
+                    class="highlight">technology stack.</span>
+              <br/>
+              <span class="highlight">Developing an understanding of different techniques required for parts of the tech stack,</span>
+              for example data consistency, async tasks and availability of applications
+            </li>
+            <li>
+              <span class="highlight underline">Reliability &amp; Observability</span><br/>
+              Is <span class="highlight">aware</span> of the organisation's monitoring philosophy, <span
+                    class="highlight">developing skill</span> with the monitoring tools and the metrics for their team's
+              domain.
+            </li>
+          </ul>
+        </div>
+
+        <div class="troubleshooting">
+          <span class="pill">Troubleshooting</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Debugging</span><br/>
+              Uses a </span><span class="highlight">systematic approach </span>to debug issues located within a
+              single service.
+            </li>
+            <li>
+              <span class="highlight underline">Incident Response</span><br/>
+              <span class="highlight">Uses a range of tools to detect when there is an incident and raises this with stakeholders in a timely manner. Takes ownership of incidents which fall in their domain. May be involved in the resolution of an incident.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="architecture">
+          <span class="pill">Technical Design &amp; Architecture</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understanding Code</span><br/>
+              <span class="highlight"> Understands a portion</span><span> of the team's domain, can </span>
+              <span class="highlight">gain sufficient context to work productively in that portion.</span>
+            </li>
+            <li>
+              <span class="highlight underline">API Design</span><br/>
+              Understands different API interfaces and formats and <span class="highlight">creates</span> APIs for consumption.</li>
+            <li>
+              <span class="highlight">Understands some best practices when designing APIs and deepening this understanding.</span><span> This can include response sizes, security, error handling, rate limiting, performance, REST &amp; GraphQL best practices (pagination, batching &amp; caching, authorisation, filters, interface design) sometimes with help from others.<br/></span>
+            </li>
+            <li>
+              <span class="highlight underline">Design Patterns</span><br/>
+              <span class="highlight">Considers and understands how to apply applicable patterns within the context of the codebase.</span>
+              For example understanding pub-sub pattern or circuit breaker pattern for different scenarios that are
+              applicable for work being undertaken. May seek help from others on which patterns to apply.
+            </li>
+            <li>
+              <span class="highlight underline">Software Architecture</span><br/>
+              Designs functions considering how this fits into the <span class="highlight">overall architecture.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quality">
+          <span class="pill">Quality</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Code Reviews</span><br/>
+              <span class="highlight">Creates</span> reasonable sized PRs with a description of changes, testing
+              conducted and <span class="highlight">impact of deployment</span>
+              <br/>
+              Reviews PRs with the <span class="highlight">lens of quality and value</span> - code quality,
+              acceptance criteria, business logic, test coverage and aligned to architecture direction.
+              <br/>
+              <span class="highlight">Consistently provides constructive and respectful comments </span>in PRs.
+              Proactive in getting their PR resolved and reviewing other PRs.
+            </li>
+            <li>
+              <span class="highlight underline">User Centric</span><br/>
+              Strives to deliver <span class="highlight">features</span> with the end-users in mind, with a view of
+              how the <span class="highlight">epic</span> will bring value to end-users.
+              Striving <span class="highlight">for ease of use for end-users</span> (internal and external, including developers)
+            </li>
+            <li>
+              <span class="highlight underline">Testing</span><br/>
+              Understands the testing pyramid, and writes unit tests as well as higher level tests in accordance
+              with it. </span>
+              <span class="highlight">Always writes tests to handle</span> expected edge cases and errors gracefully,
+              as well as happy paths.
+            </li>
+            <li>
+              <span class="highlight underline">Best Practice</span><br/>
+              <span class="highlight">Developing an understanding of standards to follow</span> and aims for best
+              practice being applied to work <span class="highlight">most of the time.</span>
+              <span class="highlight">References guides and known standards</span> as well as seek assistance from others.
+            </li>
+          </ul>
+        </div>
+
+        <div class="craft">
+          <span class="pill">Craft</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Data Structures &amp; Algorithms</span><br/>
+              <span class="highlight">Understands</span> different data structures and when to use these.
+              Has a <span class="highlight">general understanding of some algorithms</span> that might be applied and
+              associated complexity.
+            </li>
+            <li>
+              <span class="highlight underline">Writing Code</span><br/>
+              <span class="highlight">Consistently</span> writes functions that are easily testable, <span
+                    class="highlight">easily understood by other developers</span>, and accounts for known edge cases
+              and errors.
+            </li>
+            <li>
+              <span class="highlight underline">Technical Expertise</span><br/>
+              <span class="highlight">Understands </span>the basics of the tech stack, <span class="highlight">stretching </span>knowledge
+              into other areas within a chosen expertise.
+              Is <span class="highlight">capable of configuration changes and deepening the understanding of chosen frameworks</span>
+            </li>
+          </ul>
+        </div>
+
+        <a class="link" id="show-mid-all" onclick="showAll('mid')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-mid-all" onclick="hideAll('mid')">+ Hide Other Competencies</a>
+      </div>
+
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="mid-show" onclick="showExamples('mid')">+ show examples</a>
+        <a class="hide link" id="mid-hide" onclick="hideExamples('mid')">- hide examples</a>
+        <ul class="hide" id="mid-examples">
+          <li>Prototyped a simple new feature quickly</li>
+          <li>Refactors code when possible - adding tests where they are missing, making code more testable and leaving code better than they found it</li>
+          <li>Requested tests for a PR or found missed cases when acting as a reviewer</li>
+          <li>Troubleshoots using different techniques such as: looking at logs, investigating kuberenetes pods, RabbitMQ queues etc</li>
+          <li>Added instructions in README on the new dev setup</li>
+          <li>Identified an issue in a PR where the ids and email addresses were used in a URL</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--Senior-->
+    <div class="row">
+
+      <div class="left col">
+        <span class=title>E3: Senior<br/>Engineer</span>
+        <p><span class=focus>FOCUS: <br/>Within Team</span></p>
+        <a href="https://tinyurl.com/e360-engineer-iii" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+      <div class="middle" id="senior-skills">
+        <div class="reliable">
+          <span class="pill">Reliable &amp; Robust Systems</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Security</span><br/>
+              Approaches engineering work with a security lens. <span class="highlight">Actively looks for security vulnerabilities </span>both in the code and when providing peer reviews.</li>
+            <li>
+              <span class="highlight underline">Distributed Systems</span><br/>
+              Has a <span class="highlight">holistic view</span> on how the applications across <span class="highlight">more than one context</span> integrate with eachother. Has an understanding of different slices of the technology stack and has a deep understanding of a few of these.
+              <br/>
+              <span class="highlight">Usually</span> considers data consistency, availability and performance in production of features and <span class="highlight">applies the appropriate technique.</span>
+            </li>
+            <li>
+              <span class="highlight underline">Reliability &amp; Observability</span><br/>
+              Is aware of the organisation's monitoring philosophy and <span class="highlight">skilled</span> with the monitoring tools. <span class="highlight">Helps tune and change the monitoring on their team accordingly.</span> Is aware of the operational data for their team's domain and <span class="highlight">uses it as a basis for suggesting stability and performance improvements.</span></li>
+          </ul>
+        </div>
+
+        <div class="troubleshooting">
+          <span class="pill">Troubleshooting</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Debugging</span><br/>
+              <span class="highlight">Proficient</span> at using systematic debugging to diagnose all issues located to a single service. Uses systematic debugging to diagnose <span class="highlight">cross service issues</span>, sometimes with help from others.
+            </li>
+            <li>
+              <span class="highlight underline">Incident Response</span><br/>
+              <span class="highlight">Adept at using a range of tools</span> to detect when there is an incident and raises this with stakeholders in a <span class="highlight">timely manner</span>. Takes ownership of incidents which fall in their domain. May be involved in the resolution of an incident or <span class="highlight">provide assistance</span> to others on resolving incidents. <span class="highlight">Understands issues in their domain and across domains</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="architecture">
+          <span class="pill">Technical Design &amp; Architecture</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understanding Code</span><br/>
+              Understands their <span class="highlight">team's domain</span> and can gather sufficient context to work <span class="highlight">productively</span> within it. Has <span class="highlight">expertise</span> in a portion of their team's domain.</li>
+            <li>
+              <span class="highlight underline">API Design</span><br/>
+              <span class="highlight">Consistently</span> considers best practice when designing APIs</li>
+            <li>
+              <span class="highlight underline">Design Patterns</span><br/>
+              <span class="highlight">Consistently</span> considers and applies applicable patterns across several contexts/codebases, in accordance to agreed best practices and standards.</li>
+            <li>
+              <span class="highlight underline">Software Architecture</span><br/>
+              Consistently designs code that fits with the overall <span class="highlight"> architecture. Utilizes abstractions and code isolation effectively.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quality">
+          <span class="pill">Quality</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Code Reviews</span><br/>
+              <span class="highlight">Consistently</span> creates reasonable sized PRs that contain description of changes and testing conducted.  <span class="highlight">Consistently</span> provides and responds constructively and respectfully in comments in PRs. <span class="highlight">Often provides meaningful suggestions in PRs.</span>
+            </li>
+            <li>
+              <span class="highlight underline">User Centric</span><br/>
+              Reviews other PRs with the lens of <span class="highlight">quality and value</span> - code quality, acceptance criteria, business logic, test coverage and <span class="highlight">aligned to overall architecture. Highlights any issues with a PR that might result in release/merge complications.</span> Proactive in reviewing PRs in the team and resolving their open PRs in a <span class="highlight">timely manner.</span>
+            </li>
+            <li>
+              <span class="highlight underline">Testing</span><br/>
+              <span class="highlight">Delivers features</span> with the end-users in mind, understands how the epics in the <span class="highlight">team's context</span> brings value to end-users.  Thinks of ease of use for end-users (internal and external, including developers)
+              <br/>
+              Understands their <span class="highlight">Engineering team's testing approach</span>, and uses <span class="highlight">quality metrics to identify gaps.</span> Works with their team to <span class="highlight">recommend solutions</span> that are in accordance with accepted testing frameworks and the testing pyramid.</li>
+            <li>
+              <span class="highlight underline">Best Practice</span><br/>
+              <span class="highlight">Knows which standards to follow and aims for best practice</span> being applied to work <span class="highlight">most</span> of the time. <span class="highlight">Seeks</span> and references guides and known standards as well as <span class="highlight">help others learn about best practice</span></li>
+          </ul>
+        </div>
+
+        <div class="craft">
+          <span class="pill">Craft</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Data Structures &amp; Algorithms</span><br/>
+              Understands different data structures and when to use different structures. Understands when algorithms that might be applied and associated complexity. <span class="highlight">Helps others build their understanding</span> and when there is added complexity in an algorithm applied and <span class="highlight">suggests improvements</span>
+            </li>
+            <li>
+              <span class="highlight underline">Writing Code</span><br/>
+              <span class="highlight">Consistently writes production-ready code</span> that is easily testable, easily understood by other developers, and accounts for edge cases and errors.
+            </li>
+            <li>
+              <span class="highlight underline">Technical Expertise</span><br/>
+              <span class="highlight">Good understanding of the tech stack, continues to stretch knowledge into more complex areas within a chosen expertise. Assists others with learning</span>
+            </li>
+          </ul>
+        </div>
+
+        <a class="link" id="show-senior-all" onclick="showAll('senior')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-senior-all" onclick="hideAll('senior')">+ Hide Other Competencies</a>
+      </div>
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="senior-show" onclick="showExamples('senior')">+ show examples</a>
+        <a class="hide link" id="senior-hide" onclick="hideExamples('senior')">- hide examples</a>
+        <ul class="hide" id="senior-examples">
+          <li>Fixes complicated bugs outside of regular domain</li>
+          <li>Helped someone with troubleshooting and identifying a performance problem and resolved this quickly in production</li>
+          <li>Implements complex features with a large product surface area</li>
+          <li>Added instrumentation and tools to measure performance metrics</li>
+          <li>Designed and implemented integration with Third Party with considerations to load, security, error handling and other best practises</li>
+          <li>Created user manuals for a new feature</li>
+          <li>Ensured the GraphQL response for new queries and mutations did not leak sensitive data</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--Team Lead-->
+    <div class="row even">
+
+      <div class="left col">
+        <span class=title>E4: Development Lead</span>
+        <p><span class=focus>FOCUS: <br/>Within Team and Stakeholders</span></p>
+        <a href="https://tinyurl.com/e360-devlead" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+      <div class="middle" id="teamlead-skills">
+        <div class="reliable">
+          <span class="pill">Reliable &amp; Robust Systems</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Security</span><br/>
+              <span class="highlight">Actively works with the security experts in the team, as well as their own team, to refine their team's approach to security based on the organisation's security strategy. Fosters a security first mindset within their own team, and leads by example.</span>
+            </li>
+            <li>
+              <span class="highlight underline">Distributed Systems</span><br/>
+              Has a <span class="highlight">holistic view</span> on how the applications integrate across a few contexts. Has an understanding of different slices of the technology stack and has a deep understanding of a few of these.
+              <br/><span class="highlight">Prompts</span> the team to <span class="highlight">factor in</span> data consistency, availability and performance in production of features.
+            </li>
+            <li>
+              <span class="highlight underline">Reliability &amp; Observability</span><br/>
+              <span class="highlight">Drives monitoring work on their team</span> based on the organisation's monitoring philosophy. Is aware of the operational data for their team's domain and uses it as a basis for driving changes to the team's services to achieve <span class="highlight">stability and performance improvements.</span></li>
+          </ul>
+        </div>
+
+        <div class="troubleshooting">
+          <span class="pill">Troubleshooting</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Debugging</span><br/>
+              Proficient at using systematic debugging to diagnose <span class="highlight">all issues within the scope of their domain.</span>
+            </li>
+            <li>
+              <span class="highlight underline">Incident Response</span><br/>
+              Adept at using a range of tools to detect when there is an incident and raises this with stakeholders in a timely manner. Takes ownership of incidents which fall in their domain <span class="highlight">and team.</span>
+              <span class="highlight">Leads</span> the resolution of an incident or provide assistance to others on resolving incidents. <span class="highlight">Has the ability to understand issues in their domain and across domains</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="architecture">
+          <span class="pill">Technical Design &amp; Architecture</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understanding Code</span><br/>
+              Has <span class="highlight">expertise</span> in their team's domain, including the <span class="highlight">breadth of services, how they interact, and data flows between systems. Understands adjacent domains and impact on their domain.</span>
+            </li>
+            <li>
+              <span class="highlight underline">API Design</span><br/>
+              Consistently considers best practice when designing APIs and <span class="highlight">ensures the work in the team meets these</span>
+            </li>
+            <li>
+              <span class="highlight underline">Design Patterns</span><br/>
+              <span class="highlight">Leads</span> the team in applying applicable and relevant design patterns in the team's work and contexts, in accordance to agreed best practices and standards with pragmatism
+            </li>
+            <li>
+              <span class="highlight underline">Software Architecture</span><br/>
+              <span class="highlight">Works with the team</span> to ensure architecture and technical approaches are <span class="highlight">aligned to the broader engineering goals</span>
+              (e.g. scaling or validation mode, continuous deployment etc) and the <span class="highlight">architectural roadmap</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quality">
+          <span class="pill">Quality</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Code Reviews</span><br/>
+              <span class="highlight">Encourages the culture of quality code reviews within the team. Provides guidance on reviews conducted by others for others.
+              </span>
+              <br/>
+              Highlights any issues with a PR that might result in release/merge complications.
+              <br/>
+              Is highly aware of the team's <span class="highlight">dependencies</span> and proactive in ensuring the team's PRs are reviewed in a timely manner.
+            </li>
+            <li>
+              <span class="highlight underline">User Centric</span><br/>
+              <span class="highlight">Guides the team to deliver features</span> with the end-users in mind and how the <span class="highlight">team's context</span> will bring value to end-users.  Thinks of ease of use for end-users (internal and external, including developers)
+            </li>
+            <li>
+              <span class="highlight underline">Testing</span><br/>
+              <span class="highlight">Drives</span> their team's testing approach, in accordance to Engineering testing strategy, <span class="highlight">always covering happy paths, variances in data, errors and known edge cases</span> and uses quality metrics to identify gaps. Works with their team to recommend solutions that are in accordance with accepted testing frameworks and the testing pyramid.
+            </li>
+            <li>
+              <span class="highlight underline">Best Practice</span><br/>
+              <span class="highlight">Guides</span> the team on following standards and aims for best practice in the team's work. Seeks and references guides and known standards and <span class="highlight">coaches</span> others on applying best practice in their work
+            </li>
+          </ul>
+        </div>
+
+        <div class="craft">
+          <span class="pill">Craft</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Data Structures &amp; Algorithms</span><br/>
+              Understands different data structures and when to use these. Has a general understanding of some algorithms that might be applied and associated complexity.
+            </li>
+            <li>
+              <span class="highlight underline">Writing Code</span><br/>
+              Consistently writes functions that are easily testable, easily understood by other developers, and accounts for known edge cases and errors.
+            </li>
+            <li>
+              <span class="highlight underline">Technical Expertise</span><br/>
+              Understands the basics of the tech stack, stretching knowledge into other areas within a chosen expertise. Is capable of configuration changes and deepening the understanding of chosen framework
+            </li>
+          </ul>
+        </div>
+        <a class="link" id="show-teamlead-all" onclick="showAll('teamlead')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-teamlead-all" onclick="hideAll('teamlead')">+ Hide Other Competencies</a>
+      </div>
+
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="teamlead-show" onclick="showExamples('teamlead')">+ show examples</a>
+        <a class="hide link" id="teamlead-hide" onclick="hideExamples('teamlead')">- hide examples</a>
+        <ul class="hide" id="teamlead-examples">
+          <li>Focuses the team on quality with regular reminders</li>
+          <li>Makes architectural decisions that align to the strategic vision</li>
+          <li>Set up monitoring to capture metrics, for the stability and maintability of a new feature in their domain in production</li>
+          <li>Designed a technical strategy for migration of legacy data considering implications where this data is used across systems</li>
+          <li>Designed complex project that covered a holistic technical solution which encompassed multiple systems and technologies</li>
+          <li>Ran a workshop demonstrating how to use a new tool</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--Engineering Manager-->
+    <div class="row">
+
+      <div class="left col">
+        <span class=title>E5: Engineering Manager</span>
+        <p><span class=focus>FOCUS: <br/>Across Several Teams</span></p>
+        <a href="https://tinyurl.com/e360-eng-mgr" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+      <div class="middle" id="em-skills">
+        <div class="reliable">
+          <span class="pill">Reliable &amp; Robust Systems</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Security</span><br/>
+              Actively works with the security lead/team, as well as <span class="highlight">across several teams</span>, to apply the organisation's security strategy. Fosters a security first mindset <span class="highlight">across those teams</span>, leading by example.
+            </li>
+            <li>
+              <span class="highlight underline">Distributed Systems</span><br/>
+              Has a holistic view on how the applications integrate across a few contexts. Has an understanding of different slices of the technology stack and has a deep understanding of a few of these.
+              <br/>
+              <span class="highlight">Drives the teams</span> to <span class="highlight">factor in</span> data consistency, availability and performance in production of features.
+            </li>
+            <li>
+              <span class="highlight underline">Reliability &amp; Observability</span><br/>
+              <span class="highlight">Fosters a culture of observability across several teams and helps them use operational data to improve stability and performance of their domains.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="troubleshooting">
+          <span class="pill">Troubleshooting</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Debugging</span><br/>
+              Proficient at using systematic debugging to diagnose all issues within <span class="highlight">a set of related domains.</span>
+            </li>
+            <li>
+              <span class="highlight underline">Incident Response</span><br/>
+              Adept at using a range of tools to detect when there is an incident and raises this with stakeholders in a timely manner.
+              <br/>Takes ownership of incidents which fall in <span class="highlight">their teams.</span>
+              <br/>Leads the resolution of an incident or provide assistance to others on resolving incidents.
+              <br/>Understands issues in their domain and across domains
+            </li>
+          </ul>
+        </div>
+
+        <div class="architecture">
+          <span class="pill">Technical Design &amp; Architecture</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understanding Code</span><br/>
+              Has expertise in a <span class="highlight">set of related team's domains,</span> including the breadth of services, how they interact, and data flows between systems.
+            </li>
+            <li>
+              <span class="highlight underline">API Design</span><br/>
+              Consistently considers best practice when designing APIs and ensures the work <span class="highlight">across teams</span> meets best practices
+            </li>
+            <li>
+              <span class="highlight underline">Design Patterns</span><br/>
+              <span class="highlight">Works across the teams to foster a culture</span> of applying applicable and relevant design patterns,
+              in accordance needs of the company and guides several teams in <span class="highlight">anticipation of future use cases.</span>
+            </li>
+            <li>
+              <span class="highlight underline">Software Architecture</span><br/>
+              Works <span class="highlight">with teams</span> to ensure architecture and technical approaches are aligned to the broader engineering goals
+              (e.g. scaling or validation mode, continuous deployment etc)
+              <br/><span class="highlight">Contributes to and drives the architectural roadmap</span>
+              <br/><span class="highlight">Guides the team on knowing when to invest in tech or focus on delivery (appropriate ROI over strategic horizons)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quality">
+          <span class="pill">Quality</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Code Reviews</span><br/>
+              Encourages the culture of quality and timely code reviews <span class="highlight">across several teams</span>,
+              also encouraging teams to <span class="highlight">consider release/merge complications.</span> Provides guidance on reviews conducted by others for others.
+            </li>
+            <li>
+              <span class="highlight underline">User Centric</span><br/>
+              <span class="highlight">Guides across the team to deliver features</span> with the end-users in mind, with a view of how the <span class="highlight">contexts</span> will bring value to end-users.
+              <span class="highlight">Champions</span> the of ease of use for end-users (internal and external, including developers) e.g. via documentation, MVPs, maintainability, sharebacks, knowledge sharing.
+            </li>
+            <li>
+              <span class="highlight underline">Testing</span><br/>
+              Understands and <span class="highlight">sets</span> the testing approach of <span class="highlight">several teams,</span> and uses quality metrics to identify gaps. <span class="highlight">Works with those teams</span> to recommend solutions that are in accordance with accepted testing frameworks and the testing pyramid. <span class="highlight">Influences organisation wide testing strategy.</span>
+            </li>
+            <li>
+              <span class="highlight underline">Best Practice</span><br/>
+              Guides <span class="highlight">teams</span> on following standards and aims for best practice across teams.
+              <br/>Seeks and references guides and known standards, <span class="highlight">sets standards</span> and guidelines and coaches others on applying best practice in their work.
+              <br/><span class="highlight">Drives accountability for reliability measures such as code coverage or defect rates</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="craft">
+          <span class="pill">Craft</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Data Structures &amp; Algorithms</span><br/>
+              Understands different data structures and when to use different structures. Understands when algorithms that might be applied and associated complexity.
+              Helps others build their understanding and when there is added complexity in an algorithm applied and suggests improvements
+            </li>
+            <li>
+              <span class="highlight underline">Writing Code</span><br/>
+              <span class="highlight">Guides teams</span> to consistently write production-ready code that is easily testable, easily understood by other developers, and accounts for edge cases and errors.
+            </li>
+            <li>
+              <span class="highlight underline">Technical Expertise</span><br/>
+              <span class="highlight">Leads across teams in growing their knowledge into more complex areas within a chosen expertise.</span>
+            </li>
+          </ul>
+        </div>
+        <a class="link" id="show-em-all" onclick="showAll('em')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-em-all" onclick="hideAll('em')">+ Hide Other Competencies</a>
+      </div>
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="em-show" onclick="showExamples('em')">+ show examples</a>
+        <a class="hide link" id="em-hide" onclick="hideExamples('em')">- hide examples</a>
+        <ul class="hide" id="em-examples">
+          <li>Worked with teams to set a strategy for quality / best practices</li<li></li>
+          <li>Guides teams to consider cross dependencies in their projects</li>
+          <li>Facilitates or guides teams on technical design</li>
+          <li>Takes ownership of systems which noone owns or wants</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--VP Eng-->
+    <div class="row even">
+
+      <div class="left col">
+        <span class=title>E6: VP Engineering</span>
+        <p><span class=focus>FOCUS: <br/>Across Organisation</span></p>
+      </div>
+      <div class="middle" id="vp-skills">
+        <div class="reliable">
+          <span class="pill">Reliable &amp; Robust Systems</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Security</span><br/>
+              Actively works with the security lead/team to <span class="highlight">set and refine organisation-wide security strategy.</span> Fosters a security first mindset  <span class="highlight">across the organisation.</span>
+              <span class="highlight">Drives security awareness and culture across the organisation.</span>
+            </li>
+            <li>
+              <span class="highlight underline">Distributed Systems</span><br/>
+              Has a holistic view on the applications in the <span class="highlight">organisation.</span> Has an understanding of different slices of the technology stack.
+              <span class="highlight">Drives engineering</span> to factor in data consistency, availability and performance in production of features.
+            </li>
+            <li>
+              <span class="highlight underline">Reliability &amp; Observability</span><br/>
+              Fosters a culture of observability  <span class="highlight">across the engineering organisation.</span>
+              Helps teams  <span class="highlight">across the engineering organisation</span> use operational data to improve stability and performance of their domains.
+            </li>
+          </ul>
+        </div>
+
+        <div class="troubleshooting">
+          <span class="pill">Troubleshooting</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Debugging</span><br/>
+              <span class="highlight">Coaches the engineering organisation on a debugging mindset, with a view of using the appropriate tool for specific needs</span>
+            </li>
+            <li>
+              <span class="highlight underline">Incident Response</span><br/>
+              <span class="highlight">Leads incident response across the engineering organisation as needed.</span> Uses systematic debugging to diagnose issues across the organisation.
+              <br/><span class="highlight">Selects and procures tools and establishes processes to support the team in effective troubleshooting.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="architecture">
+          <span class="pill">Technical Design &amp; Architecture</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Understanding Code</span><br/>
+              Provides <span class="highlight">high-level architectural guidance</span> and assists the team in <span class="highlight">aligning architecture to business imperatives.</span>
+            </li>
+            <li>
+              <span class="highlight underline">API Design</span><br/>
+              As noted in Engineering Manager
+            </li>
+            <li>
+              <span class="highlight underline">Design Patterns</span><br/>
+              <span class="highlight">Works across the organisation</span> to foster a culture of applying applicable and relevant design patterns, in accordance needs of the company and guides the teams in the organisation in anticipation of future use cases.
+            </li>
+            <li>
+              <span class="highlight underline">Software Architecture</span><br/>
+              Works <span class="highlight">across the organisation</span> to foster a culture of architecture that allows for iterative, autonomous development and future scaling. Guides teams in the <span class="highlight">organisation</span> in anticipation of future use cases and helps them make design decisions that minimize the cost of future changes. <span class="highlight">Sets the direction of the architectural roadmap.</span>
+              <br/>Determines the <span class="highlight">Return-on-Investment</span> for specific engineering initiatives and determines <span class="highlight">appropriate levels of investment</span> for given strategic horizons.
+              <br/><span class="highlight">Establishes engineering strategic objectives that drive architecture and technical approach</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quality">
+          <span class="pill">Quality</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Code Reviews</span><br/>
+              <span class="highlight">Drives and sets</span> the culture of quality and timely code reviews across the  <span class="highlight">organisation</span>, also encouraging teams to consider release/merge complications. Provides guidance on reviews conducted by others for others.
+            </li>
+            <li>
+              <span class="highlight underline">User Centric</span><br/>
+              <span class="highlight">Champions and guides the engineering organisation</span> understand and deliver to real user needs.
+            </li>
+            <li>
+              <span class="highlight underline">Testing</span><br/>
+              <span class="highlight"> Drives the organisational testing strategy</span>, and uses quality metrics to identify gaps. Works with <span class="highlight">all teams</span> to recommend solutions that are in accordance with accepted testing frameworks and the testing pyramid.
+            </li>
+            <li>
+              <span class="highlight underline">Best Practice</span><br/>
+              <span class="highlight">Champions</span> and guides teams on following standards and aims for best practice across the organisation.
+            </li>
+          </ul>
+        </div>
+
+        <div class="craft">
+          <span class="pill">Craft</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Data Structures &amp; Algorithms</span><br/>
+              As noted in Engineering Manager
+            </li>
+            <li>
+              <span class="highlight underline">Writing Code</span><br/>
+              As noted in Engineering Manager
+            </li>
+            <li>
+              <span class="highlight underline">Writing Code</span><br/>
+              Leads the <span class="highlight">engineering organisation</span>
+              in growing their knowledge into more complex areas within a chosen expertise.
+              <br/>Works to keep <span class="highlight">skills up-to-date</span> to aid in decision making, coaching and facilitation.
+              <br/><span class="highlight">Has basic knowledge in a wide variety of technologies and skill-sets.</span>
+              <br/><span class="highlight">Has deep expertise in a few specific areas.</span>
+            </li>
+          </ul>
+        </div>
+
+        <a class="link" id="show-vp-all" onclick="showAll('vp')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-vp-all" onclick="hideAll('vp')">+ Hide Other Competencies</a>
+      </div>
+
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="vp-show" onclick="showExamples('vp')">+ show examples</a>
+        <a class="hide link" id="vp-hide" onclick="hideExamples('vp')">- hide examples</a>
+        <ul class="hide" id="vp-examples">
+          <li>Defines policies for the engineering org that encourage quality work</li>
+          <li>Makes decisions that have positive, long term, wide ranging consequences</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

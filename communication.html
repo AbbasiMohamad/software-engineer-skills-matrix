@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset=UTF-8>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <script src="functions.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="main">
+  <div class="nav">
+    <a href="index.html">
+      <span class="item">TECHNICAL</span>
+    </a>
+    <a href="communication.html">
+      <span class="item selected">COMMUNICATION, FEEDBACK, COLLABORATION & COMMUNITY</span>
+    </a>
+    <a href="leadership.html">
+      <span class="item">
+        LEADERSHIP
+      </span>
+    </a>
+    <a href="delivery.html">
+      <span class="item">
+        DELIVERY &AMP; EFFECTIVENESS
+      </span>
+    </a>
+    <a href="strategy.html">
+      <span class="item">STRATEGY</span>
+    </a>
+  </div>
+
+  <!--header-->
+  <div class="header">
+    <div class="skill-header">
+
+      <h1>Communication, Feedback, Collaboration & Community</h1>
+      <a href="#communication" onclick="changeSkill('communication')">
+        <div class="competencies selected" id="communication-header">
+          <div class="headerbox">
+            <div class=header1>Communication</div>
+          </div>
+          <div class=summary>Shares the right amount of information with the right people, at the right time, and listens effectively</div>
+          <div class=sub-skills>
+            <span class="text">&#x25D7;&nbsp;Knowledge Sharing</span>
+            <span class="text">&#x25D7;&nbsp;Effective Communication</span>
+            <span class="text">&#x25D7;&nbsp;Feedback</span>
+
+          </div>
+        </div>
+      </a>
+
+      <a href="#teamwork" onclick="changeSkill('teamwork')">
+        <div class="competencies" id="teamwork-header">
+          <div class="headerbox">
+            <span class=header1>Teamwork</span>
+          </div>
+          <div class=summary>
+            Works positively and collaboratively in a team, contributing to the team's goals and successes, works to unblock others and lives the company value of "One Team One Dream"
+          </div>
+          <div class="sub-skills">
+            <span class="text">&#x25D7;&nbsp;Teamwork</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#community" onclick="changeSkill('community')">
+        <div class="competencies" id="community-header">
+          <div class="headerbox">
+            <span class=header1>Community</span>
+          </div>
+          <div class=summary>
+            Builds community internally, acts with integrity, and respects other opinions.
+            Champions and extols company values.
+            Promotes the company externally as an attractive and thoughtful place to work
+          </div>
+          <div class="sub-skills">
+            <span class="text">&#x25D7;&nbsp;Community</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#recruitment" onclick="changeSkill('recruitment')">
+        <div class="competencies" id="recruitment-header">
+          <div class="headerbox">
+            <span class=header1>Recruitment</span>
+          </div>
+          <div class=summary>Strengthens the engineering team by bringing in excellent staff members<br/></div>
+          <div class="sub-skills">
+            <span class="text">&#x25D7;&nbsp;Recruitment Strategy</span>
+            <span class="text">&#x25D7;&nbsp;Interviewing</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="main">
+    <!--Junior-->
+    <div class="row">
+      
+      <div class="left col">
+        <span class=title>E1: Engineer I</span>
+        <p><span class=focus>FOCUS: <br/>Within Task</span></p>
+        <a href="https://tinyurl.com/e360-engineer-i" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+      <div class="middle" id="junior-skills">
+        <div class="communication">
+          <span class="pill">Communication</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Feedback</span>
+              Actively seeks feedback through pull requests and pairing, and uses feedback from others as a tool for growth.
+            </li>
+            <li>
+              <span class="highlight underline">Knowledge Sharing</span>
+              Understands their area of work. Aims to share knowledge of their work and areas they have worked in frequently.
+              <br/>Techniques can include presenting at demos, documention, thorough descriptions in PRs, comments in tickets and contributions to the README
+            </li>
+            <li>
+              <span class="highlight underline">Effective Communication</span>
+              Communicates effectively, clearly, concisely and in an audience-oriented way, in written and verbal form.
+              <br/>Communicates progress of work, escalates issues, rubber-ducks approaches to their work with a team member, and asks for help where needed.
+              <br/>Actively listens to others and ensures they are understood. Asks questions for clarification. Pays attention to nonverbal communication.</li>
+          </ul>
+        </div>
+
+        <div class="teamwork">
+          <span class="pill">Teamwork</span>
+          <ul>
+            <li>
+              Helps their teammates when requested, volunteers themself for team tasks. Gives or shares credit where due.
+              <br/>Actively demonstrates a positive attitude, learns from mistakes and does not place blame on others.
+            </li>
+          </ul>
+        </div>
+        <div class="community">
+          <span class="pill">Community</span>
+          <ul>
+            <li>
+              Works to build strong relationships with their teammates and manager and works to contribute positively to company culture.
+            </li>
+          </ul>
+        </div>
+
+        <div class="recruitment">
+          <span class="pill">Recruitment</span>
+          <ul>
+            <li>
+              N/A (not applicable at this level)
+            </li>
+          </ul>
+        </div>
+        <a class="link" id="show-junior-all" onclick="showAll('junior')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-junior-all" onclick="hideAll('junior')">+ Hide Other Competencies</a>
+      </div>
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="junior-show" onclick="showExamples('junior')">+ show examples</a>
+        <a class="hide link" id="junior-hide" onclick="hideExamples('junior')">- hide examples</a>
+        <ul class="hide" id="junior-examples">
+          <li>Allows others to speak and actively listens to their ideas</li>
+          <li>Joined a guild</li>
+          <li>Helps team members test their work</li>
+          <li>Communicates task updates clearly and effectively. Articulates current progress, blockers and where they need help.</li>
+          <li>Updated a How To Guide on an area of the codebase</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--Mid Level-->
+    <div class="row even">
+      
+      <div class="left col">
+        <span class=title>E2: Engineer II</span>
+        <p><span class=focus>FOCUS: <br/>Within Epic</span></p>
+        <a href="https://tinyurl.com/e360-engineer-ii" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+
+      <div class="middle" id="mid-skills">
+        <div class="communication">
+          <span class="pill">Communication</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Feedback</span>
+              Actively seeks feedback through pull requests and pairing, seeking from relevant domain experts.
+              <br/>
+              Provides constructive, respectful feedback to other developers through PRs and pairing,
+              uses feedback from others as a tool for growth and <span class="highlight">actively follows up on feedback given.</span>
+            </li>
+            <li>
+              <span class="highlight underline">Knowledge Sharing</span>
+              <span class="highlight">Understands their team's work domain. Frequently and actively</span> shares knowledge of their work and
+              areas they have worked in.
+              <br/><span class="highlight">Watches for opportunities to share knowledge.</span>
+              <br/>Techniques can include <span class="highlight">pairing, announcing new changes to the team, speaking about a topic,</span>
+              presenting at demos, documention, thorough descriptions in PRs, comments in tickets and contributions to the README
+            </li>
+            <li>
+              <span class="highlight underline">Effective Communication</span>
+              <span class="highlight">Usually</span> communicates effectively, clearly, concisely and in an audience-oriented way in written and
+              verbal form, for <span class="highlight">both technical and non technical subjects, to their teammates.</span>
+              <br/>Communicates progress of work, escalates issues <span class="highlight">early</span> and <span class="highlight">reaches out to a diverse set of
+              people to get other perspectives on a complex design.</span>
+              <br/>Actively listens to others and ensures they are understood.
+              Asks questions for clarification. Pays attention to nonverbal communication.
+            </li>
+          </ul>
+        </div>
+
+        <div class="teamwork">
+          <span class="pill">Teamwork</span>
+          <ul>
+            <li>
+              When requested, <span class="highlight">helps their teammates overcome obstacles, resolve blockers, and complete work tasks.</span>
+              Volunteers for team tasks.
+              <br/><span class="highlight">Developing a sense where they fit into the team's progress and where they can provide assistance.</span>
+              <br/>Gives or shares credit where due.
+              <br/>Actively demonstrates a positive attitude, learns from mistakes and does not place blame on others.
+            </li>
+          </ul>
+        </div>
+        <div class="community">
+          <span class="pill">Community</span>
+          <ul>
+            <li>Works to build strong relationships with their teammates, manager, and <span class="highlight">product counterpart.</span>
+              <br>Contributes positively to company culture <span class="highlight">and an inclusive culture.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="recruitment">
+          <span class="pill">Recruitment</span>
+          <ul>
+            <li>Partcipates in interviews <span class="highlight">at times. Interviews candidates with empathy and treats them all with equal respect.</span></li>
+          </ul>
+        </div>
+        <a class="link" id="show-mid-all" onclick="showAll('mid')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-mid-all" onclick="hideAll('mid')">+ Hide Other Competencies</a>
+      </div>
+
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="mid-show" onclick="showExamples('mid')">+ show examples</a>
+        <a class="hide link" id="mid-hide" onclick="hideExamples('mid')">- hide examples</a>
+        <ul class="hide" id="mid-examples">
+          <li>Provides thoughtful and constructive comments to others in code reviews</li>
+          <li>Ensures stakeholders are aware of current blockers</li>
+          <li>Notices when someone is stuck and reaches out</li>
+          <li>Added documentation on an obscure part of the system</li>
+          <li>Offers to help with setup/packup of team events/meetup</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--Senior-->
+    <div class="row">
+      
+      <div class="left col">
+        <span class=title>E3: Senior<br/>Engineer</span>
+        <p><span class=focus>FOCUS: <br/>Within Team</span></p>
+        <a href="https://tinyurl.com/e360-engineer-iii" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+
+      <div class="middle" id="senior-skills">
+        <div class="communication">
+          <span class="pill">Communication</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Feedback</span>
+              Actively seeks feedback through pull requests and pairing, seeking from relevant domain experts.
+            </li>
+            <li>
+              <span class="highlight underline">Teamwork</span>
+              <span class="highlight">Uses EQ</span> when providing constructive, respectful feedback to other developers through PRs and pairing,
+              uses feedback <span class="highlight">from and for others</span> as a tool for growth and actively follows up on feedback given.</li>
+            <li>
+              <span class="highlight underline">Knowledge Sharing</span>
+              Understands their <span class="highlight">team's domain.</span>
+              <br/>Frequently and actively shares knowledge of their work, areas they have worked in and
+              <span class="highlight">obscure areas outside of their context and encourages others to do the same.</span>
+              <br/>Techniques can include <span class="highlight">helping others,</span> pairing, announcing new changes to the team, speaking about a topic,
+              <span class="highlight">running workshops, contributing to how-to guides, contributing articles to the engineering blog,</span> presenting at demos,
+              documention, thorough descriptions in PRs, comments in tickets and contributions to the README</li>
+            <li>
+              <span class="highlight underline">Effective Communication</span>
+              Communicates effectively, clearly, concisely in written and verbal form both technical and non technical subjects,
+              and in an <span class="highlight">audience-oriented way.</span>
+              <br/>Communicates progress of work, escalates issues early and reaches out to a diverse set of people
+              to get other perspectives on a complex design.
+              <br/><span class="highlight">Demonstrates how to effectively communicate an idea, proposal, decision or counterpoint.
+                <br/>Offers solutions to problems rather than just communicating a problem.</span>
+              <br/>Actively listens to others and ensures they are understood.
+              <br/><span class="highlight">Asks thoughtful and considered questions in a respectful way.</span> Pays attention to nonverbal communication.</li>
+          </ul>
+        </div>
+
+        <div class="teamwork">
+          <span class="pill">Teamwork</span>
+          <ul>
+            <li>Helps their teammates overcome obstacles, resolve blockers, and complete work tasks <span class="highlight">without impacting their own work.</span>
+              <br/><span class="highlight">Aware of team's progress and reaches out to teammates if they notice someone has been stuck for a while.</span>
+              <br/>Gives or shares credit where due.
+              <br/>Actively demonstrates a positive attitude, <span class="highlight">takes responsibility for mistakes</span> and does not place blame on others</li>
+          </ul>
+        </div>
+
+        <div class="community">
+          <span class="pill">Community</span>
+          <ul>
+            <li>
+              Works to build strong relationships with their teammates, manager, as well as their teams' relevant business stakeholders.
+              <br/>Contributes positively to company culture.
+              <br/>Builds connectedness, and takes actions to promote an inclusive culture.
+            </li>
+          </ul>
+        </div>
+
+        <div class="recruitment">
+          <span class="pill">Recruitment</span>
+          <ul>
+            <li>
+              Partcipates in interviews regularly, interviews candidates with empathy and treats them all with equal respect,
+              developing expertise in interviewing
+            </li>
+          </ul>
+        </div>
+        <a class="link" id="show-senior-all" onclick="showAll('senior')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-senior-all" onclick="hideAll('senior')">+ Hide Other Competencies</a>
+      </div>
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="senior-show" onclick="showExamples('senior')">+ show examples</a>
+        <a class="hide link" id="senior-hide" onclick="hideExamples('senior')">- hide examples</a>
+        <ul class="hide" id="senior-examples">
+          <li>Avoids blame and focuses on and makes suggestions for positive change</li>
+          <li>Ran a knowledge sharing session</li>
+          <li>Coached a team member to solve a problem directly, rather than doing it for them</li>
+          <li>Takes time to explain concepts and best practices</li>
+          <li>Actively participates in the interviewing process via pairing or meeting candidates</li>
+          <li>Helps with setup/packup of team events/meetup</li></ul>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--Team Lead-->
+    <div class="row even">
+      
+      <div class="left col">
+        <span class=title>E4: Development Lead</span>
+        <p><span class=focus>FOCUS: <br/>Within Team and Stakeholders</span></p>
+        <a href="https://tinyurl.com/e360-devlead" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+
+      <div class="middle" id="teamlead-skills">
+        <div class="communication">
+          <span class="pill">Communication</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Feedback</span>
+              Works within their team, relevant domain experts and with its business stakeholders to foster a culture of seeking out feedback and using it as a tool for growth.
+              <br/>Actively demonstrates these behaviours.
+            </li>
+            <li>
+              <span class="highlight underline">Knowledge Sharing</span>
+              Fosters a culture of documentation and knowledge sharing within their team, other teams and with their team's business stakeholders; actively demonstrates these behaviours.
+            </li>
+            <li>
+              <span class="highlight underline">Effective Communication</span>
+              Is able to communicate effectively with a diverse team.
+              <br/>Fosters a culture of clear, concise, effective, audience-oriented communication on their team, ensuring teammates actively listen to others and are understood.
+              <br/>Asks thoughtful and considered questions in a respectful way and ensures their team demonstrates this.
+              <br/>Communicates status, project updates and relevant sharing of information across interested groups.
+              <br/>Takes the lead on driving conversations within the team to navigate complicated technical problems.
+              <br/>Actively demonstrates these behaviours. Pays attention to nonverbal communication.
+            </li>
+          </ul>
+        </div>
+
+        <div class="teamwork">
+          <span class="pill">Teamwork</span>
+          <ul>
+            <li>
+              Consistently helps their teammates overcome obstacles, resolve blockers, and complete work tasks.
+              <br/>Aware of team's progress and unblocks members of the team.
+              <br/>Gives or shares credit where due. Actively demonstrates a positive attitude, does not place blame on others, assumes responsibility for mistakes,
+              leads resolution and ensures the team follow this example.
+            </li>
+          </ul>
+        </div>
+
+        <div class="community">
+          <span class="pill">Community</span>
+          <ul>
+            <li>
+              Works to build and improve strong relationships with their teammates, manager, their teams' relevant business stakeholders, and senior engineers across the organisation.
+              <br/>Leverages relationships to better plan for and position their team.
+              <br/>Contributes positively to company culture and actively promotes an inclusive culture.
+              <br/>Contributes to improving team relatedness, and helps build a culture of lending support
+            </li>
+          </ul>
+        </div>
+
+        <div class="recruitment">
+          <span class="pill">Recruitment</span>
+          <ul>
+            <li>
+              Partcipates in interviews regularly, interviews candidates with empathy and treats them all with equal respect,
+              good example for others to follow, provides input and improvements to the interview process.
+            </li>
+          </ul>
+        </div>
+        <a class="link" id="show-teamlead-all" onclick="showAll('teamlead')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-teamlead-all" onclick="hideAll('teamlead')">+ Hide Other Competencies</a>
+      </div>
+
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="teamlead-show" onclick="showExamples('teamlead')">+ show examples</a>
+        <a class="hide link" id="teamlead-hide" onclick="hideExamples('teamlead')">- hide examples</a>
+        <ul class="hide" id="teamlead-examples">
+          <li>Resolves conflict between colleagues</li>
+          <li>Anticipates and shares schedule deviations in plenty of time</li>
+          <li>Assist with defining/inputting into an interviewing process</li>
+          <li>Motivates the team towards a goal</li>
+          <li>Promotes teamwork and knowledge sharing in their squad</li>
+          <li>Rallies the team to help with setup/packup of team events/meetup</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--Engineering Manager-->
+    <div class="row">
+      
+      <div class="left col">
+        <span class=title>E5: Engineering Manager</span>
+        <p><span class=focus>FOCUS: <br/>Across Several Teams</span></p>
+        <a href="https://tinyurl.com/e360-eng-mgr" target="_blank" class="link underline">Role Expectations</a>
+      </div>
+
+      <div class="middle" id="em-skills">
+        <div class="communication">
+          <span class="pill">Communication</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Feedback</span>
+              Works <span class="highlight">across several teams</span>, domains and with their business stakeholders to foster a culture of seeking out feedback and using it as a tool for growth.
+              <br/>Actively demonstrates these behaviours.
+            </li>
+            <li>
+              <span class="highlight underline">Knowledge Sharing</span>
+              Fosters a culture of documentation and knowledge sharing <span class="highlight">across several teams</span> and their respective business stakeholders;
+              <br/><span class="highlight">Works on growing the knowledge and skills of teams.</span>
+              <br/>Actively demonstrates these behaviours.
+            </li>
+            <li>
+              <span class="highlight underline">Effective Communication</span>
+              Is able to communicate effectively with a diverse <span class="highlight">set of teams</span>. Fosters a culture of clear, concise, effective,
+              audience-oriented communication <span class="highlight">across several teams</span>, ensuring teammates actively listen to others and are understood.
+              <br/><span class="highlight">Ensures their teams ask questions are asked in a respectful way.</span>
+              <br/><span class="highlight">Provides input to discussions on areas of strategy.
+              Reaches out to teams and groups beyond their own, and outside engineering, to gather information from stakeholders.</span>
+              <br/><span class="highlight">Uses a variety of communication methods to communicate and drive others to excel.</span>
+              <br/>Actively demonstrates these behaviours. Pays attention to nonverbal communication.
+            </li>
+          </ul>
+        </div>
+
+        <div class="teamwork">
+          <span class="pill">Teamwork</span>
+          <ul>
+            <li>
+              <span class="highlight">Consistently works across teams</span> to help them resolve blockers, and complete work tasks.
+              <br/><span class="highlight">Ensures team leads have the tools they need to unblock their teams.</span> Ensures that credit is shared and given where due.
+              <br/>Actively demonstrates a positive attitude, does not place blame on others, assumes responsibility for mistakes,
+              leads resolution and <span class="highlight">ensures this is followed across teams.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="community">
+          <span class="pill">Community</span>
+          <ul>
+            <li>
+              Works to build and improve strong relationships with engineers and managers across the <span class="highlight">organisation</span>
+              as well as relevant business stakeholders for <span class="highlight">several teams</span>.
+              <br/>Leverages relationships to better plan for and position <span class="highlight">those teams</span>.
+              Contributes positively to company culture and actively promotes an inclusive culture.
+              <br/><span class="highlight">Exemplifies selflessness for the team without compromising responsibilities, and lifts everyone up</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="recruitment">
+          <span class="pill">Recruitment</span>
+          <ul>
+            <li>
+              Actively contributes to and leads hiring decisions, brings in great candidates, makes hiring decisions, resolving discrepancies between conflicting reports.
+              <br/>Understands STAR approach and other common interview techniques
+              <br/>Aware of common cognitive biases and how to counter
+              <br/>Good understanding of applicable HR law as it applies to interviewing and recruiting
+            </li>
+          </ul>
+        </div>
+        <a class="link" id="show-em-all" onclick="showAll('em')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-em-all" onclick="hideAll('em')">+ Hide Other Competencies</a>
+      </div>
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="em-show" onclick="showExamples('em')">+ show examples</a>
+        <a class="hide link" id="em-hide" onclick="hideExamples('em')">- hide examples</a>
+        <ul class="hide" id="em-examples">
+          <li>Proactive in the tech community and promotes the company within the community via meetups/blogs/panels etc</li>
+          <li>Devoted large amount of time to helping outside direct responsibilities</li>
+          <li>Takes on large amounts of tedious grunt work for the team without being asked</li>
+          <li>Provides feedback and receives feedback in the appropriate forum</li>
+          <li>Contextualizes and clarifies ambiguous direction and strategy for others</li>
+          <li>Defines and sets recruitment strategy</li>
+          <li>Organises team events and rallies across teams to help with setup/packup of team events/meetup</li></ul>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--VP Eng-->
+    <div class="row even">
+      
+      <div class="left col">
+        <span class=title>E6: VP Engineering</span>
+        <p><span class=focus>FOCUS: <br/>Across Organisation</span></p>
+      </div>
+
+      <div class="middle" id="vp-skills">
+        <div class="communication">
+          <span class="pill">Communication</span>
+          <ul>
+            <li>
+              <span class="highlight underline">Feedback</span>
+              Works across the organisation to foster a culture of seeking out feedback and using it as a tool for growth. Actively demonstrates these behaviours.
+            </li>
+            <li>
+              <span class="highlight underline">Knowledge Sharing</span>
+              Fosters a culture of documentation and knowledge sharing across the organisation; actively demonstrates these behaviors.
+              <br/>Ensures other <span class="highlight">business leaders are informed</span> and up-to-date regarding delivery, risks and business challenges.
+              <br/><span class="highlight">Acts as a bridge</span> between engineering and the business by articulating engineering challenges to non-technical stakeholders
+            </li>
+            <li>
+              <span class="highlight underline">Effective Communication</span>
+              Effectively communicates the <span class="highlight">company strategy, mission and objectives</span> to the engineering team
+              <br/>Keeps <span class="highlight">CEO and LT informed</span> of business challenges, delivery and risk.
+              <br/><span class="highlight">Articulates the "why"</span> behind key company decisions and the impact these will have on engineering activities
+
+              <br/><span class="highlight">Communicates consistently, reiterating key messages and providing clarity and certainty to the team</span>
+
+              <br/><span class="highlight">Leads</span> large group or whole engineering discussions on the <span class="highlight">vision and direction</span> of the systems.
+            </li>
+          </ul>
+        </div>
+
+        <div class="teamwork">
+          <span class="pill">Teamwork</span>
+          <ul>
+            <li>
+              <span class="highlight">Collaborates</span> with the company <span class="highlight">leadership</span> team on company <span class="highlight">strategy</span> and initiatives
+              <br/><span class="highlight">Contributes to leadership discussions, off-sites and strategy discussions</span>
+              <br/>Consistently works <span class="highlight">across the organisation</span> to enable teams to <span class="highlight">support</span> each other.
+              <br/>Ensures <span class="highlight">leads</span> have the tools they need to unblock their teams.
+              <br/>Ensures that credit is shared and given where due.
+              <br/>Actively demonstrates a positive attitude, <span class="highlight">lead others to lead resolutions</span>,
+              does not place blame on others and ensures this is <span class="highlight">followed by all teams</span>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="community">
+          <span class="pill">Community</span>
+          <ul>
+            <li>
+              Works to build and improve strong relationships <span class="highlight">across the organisation.</span>
+              Leverages those relationships to better plan for and position the <span class="highlight">engineering organisation.</span>
+              <br/><span class="highlight">Lives the company values, guards positive culture, actively promotes an
+              inclusive culture and defines policies that support relatedness between teams.</span>
+              <br/>Represents the company <span class="highlight">externally</span> by speaking at conferences or events,
+              interacting with the media and other business leaders
+              <br/>Actively <span class="highlight">builds and grows a professional network</span> of business and technology leaders
+            </li>
+          </ul>
+        </div>
+
+        <div class="recruitment">
+          <span class="pill">Recruitment</span>
+          <ul>
+            <li>
+              <span class="highlight">Sets recruitment strategy, invests in long-term relationships for critical roles, and recruits at scale.</span>
+              <br/><span class="highlight">Sets the tone, policy and goals around building a diverse, high-quality team</span>
+              <br/>Understands STAR approach and other common interview techniques
+              <br/>Aware of common cognitive biases and how to counter
+              <br/>Good understanding of applicable HR law as it applies to interviewing and recruiting
+            </li>
+          </ul>
+        </div>
+        <a class="link" id="show-vp-all" onclick="showAll('vp')">+ Show All Competencies</a>
+        <a class="link hide" id="hide-vp-all" onclick="hideAll('vp')">+ Hide Other Competencies</a>
+      </div>
+
+      <div class="right col">
+        <div class=title>Examples</div>
+        <a class="show link" id="vp-show" onclick="showExamples('vp')">+ show examples</a>
+        <a class="hide link" id="vp-hide" onclick="hideExamples('vp')">- hide examples</a>
+        <ul class="hide" id="vp-examples">
+          <li>Champions engineering goals with peers in the business and within the engineering team</li>
+          <li>Sets the tone, policy, and goals around maintaining an inclusive company</li>
+          <li>Repairs broken team dynamics and builds harmony</li>
+          <li>Defines processes for clear communication for the entire team</li>
+          <li>Shares the right amount of information with the right people, at the right time</li>
+          <li>Created the communication plan for a large organisational change</li>
+          <li>Organises events for the engineering org and rallies the org to help with setup/packup of events/meetup</li></ul>
+        </ul>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

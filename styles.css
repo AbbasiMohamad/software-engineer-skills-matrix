@@ -1,0 +1,263 @@
+body {
+  font-family: 'Avenir', Helvetica, Arial, serif;
+  font-size: 12pt;
+  margin: 0;
+  background: #09445A;
+}
+
+a {
+  text-decoration: none;
+  color: #efefef;
+}
+
+a.link {
+  font-style: italic;
+  cursor: pointer;
+}
+
+a .competencies:hover {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.roadmaps {
+  margin-top: 5px;
+  margin-bottom: -10px;
+  color: #efefef;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #efefef;
+  margin: 10px 5px 5px 5px;
+  text-shadow: 1px 1px #555;
+}
+
+
+.pill {
+  background: #4BA398;
+  border-radius: 15px;
+  padding: 3px 10px;
+  text-align: center;
+  font-family: 'Avenir-Heavy', Helvetica, Arial, serif;
+  font-size: 8pt;
+  color: #efefef;
+  margin: 1px 2px;
+  display: inline-block;
+}
+
+.next {
+  height: 30px;
+  vertical-align: bottom;
+  display: inline-table;
+}
+
+.next a, .prev a {
+  font-size: 20px;
+  width: 15px;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: #09445A;
+  padding: 0px 0px 20px 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: solid 1px #efefef;
+}
+
+.header .skill-header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+  color: #efefef;
+}
+
+.header .competencies {
+  background: #008888;
+  height: 150px;
+  width: 245px;
+  text-align: center;
+  font-family: 'Avenir-Black', Helvetica, Arial, serif;
+  display: inline-table;
+  border: solid 1px #808080;
+}
+
+.competencies.selected {
+  border: solid 3px #FFF;
+}
+
+.hide, .troubleshooting, .architecture, .quality, .craft,
+.team, .growing, .decision, .teamwork, .community, .recruitment,
+.accountable, .planning, .ambiguity,
+.biz, .product {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.competencies .headerbox {
+  background-color: #008888;
+  border-bottom: solid 1px #efefef;
+  top: 0;
+  width: 245px;
+  padding: 5px 0px;
+  left: 0;
+  color: #efefef;
+  font-size: 11pt;
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+}
+
+.competencies .summary {
+  top: 10px;
+  height: 75px;
+  color: #efefef;
+  font-size: 9pt;
+  font-weight: normal;
+  margin: 5px;
+  font-family: 'Avenir-Oblique', Helvetica, Arial, serif;
+}
+
+.competencies .pill {
+  background: #008888;
+}
+
+.nav {
+  background: #06303f;
+  border-bottom: solid 1px #cccccc;
+}
+
+.nav .item {
+  display: inline-table;
+  padding: 10px;
+}
+
+.nav .item a {
+  font-weight: bold;
+}
+
+.nav .item:hover {
+  color: #008888;
+}
+
+.nav .selected {
+  border-bottom: solid 3px #efefef;
+  font-weight: bold;
+}
+
+.nav .selected:hover {
+  border-bottom-color: #008888;
+}
+
+
+.sub-skills {
+  margin: 5px;
+  width: 235px;
+  color: #09445A;
+  font-size: 8pt;
+}
+
+.row {
+  display: block;
+  vertical-align: top;
+  font-size: 12pt;
+  background: #311846;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.row .col {
+  color: #efefef;
+  display: inline-table;
+  vertical-align: top;
+  text-align: left;
+}
+
+.row li {
+  margin-top: 10px;
+}
+
+.row .col ul {
+  width: 60%;
+}
+
+.row .left {
+  width: 20%;
+  text-align: right;
+  padding: 30px 10px;
+
+}
+
+.row .title {
+  font-size: 16pt;
+  font-family: 'Avenir-Heavy', Helvetica, Arial, serif;
+}
+
+.row .right {
+  width: 20%;
+  padding: 30px 10px;
+
+}
+
+.row .middle {
+  display: inline-table;
+  width: 50%;
+  color: #efefef;
+  padding: 30px;
+  background: #452263;
+}
+
+.row.even {
+  background: #06303f;
+}
+
+.row.even .middle{
+  background: #09445A;
+}
+
+.row table {
+  width: 750px
+}
+
+.row td {
+  width: 50%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.row td li {
+  margin: 15px 30px 0 0;
+}
+
+.row .pill {
+  background: #A291A4;
+  font-family: 'Avenir-Heavy', Helvetica, Arial, serif;
+  font-size: 12pt;
+  padding: 5px 15px;
+}
+
+.row.even .pill {
+  background: #4BA398;
+}
+
+.row .highlight{
+  font-weight: bold;
+  font-family: 'Avenir-Heavy', Helvetica, Arial, serif;
+}
