@@ -108,10 +108,13 @@ h1 {
 .accountable, .planning, .ambiguity,
 .biz, .product {
   display: none;
+  text-align: right;
+
 }
 
 .show {
   display: block;
+  text-align: right;
 }
 
 .competencies .headerbox {
@@ -209,6 +212,7 @@ h1 {
 
 .row .title {
   font-size: 16pt;
+  text-align: right;
   /* font-family: 'Avenir-Heavy', Helvetica, Arial, serif; */
 }
 
@@ -224,6 +228,7 @@ h1 {
   color: #efefef;
   padding: 30px;
   background: #452263;
+  text-align: right;
 }
 
 .row.even {
@@ -232,6 +237,7 @@ h1 {
 
 .row.even .middle{
   background: #09445A;
+  
 }
 
 .row table {
