@@ -1,558 +1,607 @@
 <!DOCTYPE html>
 
-<html>
+<html dir="rtl">
+
 <head>
   <meta charset=UTF-8>
-  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
   <script src="functions.js" type="text/javascript"></script>
 </head>
+
 <body>
-<div class="main">
-
-  <div class="nav">
-    <a href="index.html">
-      <span class="item">TECHNICAL</span>
-    </a>
-    <a href="communication.html">
-      <span class="item">COMMUNICATION, FEEDBACK, COLLABORATION & COMMUNITY</span>
-    </a>
-    <a href="leadership.html">
-      <span class="item selected">
-        LEADERSHIP
-      </span>
-    </a>
-    <a href="delivery.html">
-      <span class="item">
-        DELIVERY &AMP; EFFECTIVENESS
-      </span>
-    </a>
-    <a href="strategy.html">
-      <span class="item">STRATEGY</span>
-    </a>
-  </div>
-
-  <!--header-->
-  <div class="header">
-    <div class="skill-header">
-
-      <h1>Leadership</h1>
-      <a href="#facilitation" onclick="changeSkill('facilitation')">
-        <div class="competencies selected" id="facilitation-header">
-          <div class="headerbox">
-            <div class=header1>Facilitation</div>
-          </div>
-          <div class=summary>Leads forums and ensures everyone has an opportunity to share opinions and be heard.</div>
-          <div class=sub-skills>
-            <span class="text">&#x25D7;&nbsp;Facilitation</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="#decision" onclick="changeSkill('decision')">
-        <div class="competencies" id="decision-header">
-          <div class="headerbox">
-            <span class=header1>Decision Making</span>
-          </div>
-          <div class=summary>
-            Makes decisions in line with the company goals and mission and demonstrates accountability for decisions.
-          </div>
-          <div class="sub-skills">
-            <span class="text">&#x25D7;&nbsp;Decision Making</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="#growing" onclick="changeSkill('growing')">
-        <div class="competencies" id="growing-header">
-          <div class="headerbox">
-            <span class=header1>Growing People</span>
-          </div>
-          <div class=summary>
-            Provides strategic support to colleagues, spreads knowledge, and develops the team.
-            Promotes a culture of learning and development
-          </div>
-          <div class="sub-skills">
-            <span class="text">&#x25D7;&nbsp;Mentoring</span>
-            <span class="text">&#x25D7;&nbsp;Coaching</span>
-            <span class="text">&#x25D7;&nbsp;Career Development</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="#team" onclick="changeSkill('team')">
-        <div class="competencies" id="team-header">
-          <div class="headerbox">
-            <span class=header1>Team Leading</span>
-          </div>
-          <div class=summary>
-            Drives alignment on the company strategy and goals are understood.
-            <br/>Successfully manages expectations, commitments and progress.</div>
-          <div class="sub-skills">
-            <span class="text">&#x25D7;&nbsp;Motivating Others</span>
-            <span class="text">&#x25D7;&nbsp;Driving Alignment</span>
-            <span class="text">&#x25D7;&nbsp;Expectation Management</span>
-          </div>
-        </div>
-      </a>
-
-    </div>
-  </div>
-
   <div class="main">
-    <!--Junior-->
-    <div class="row">
-      
-      <div class="left col">
-        <span class=title>E1: Engineer I</span>
-        <p><span class=focus>FOCUS: <br/>Within Task</span></p>
-        <a href="https://tinyurl.com/e360-engineer-i" target="_blank" class="link underline">Role Expectations</a>
-      </div>
-      <div class="middle" id="junior-skills">
 
-        <div class="facilitation">
-          <span class="pill">Facilitation</span>
-          <ul>
-            <li>n/a (not applicable at this level)</li>
-          </ul>
-        </div>
-        <div class="decision">
-          <span class="pill">Decision Making</span>
-          <ul>
-            <li>Makes decisions aligned to the overall team objectives. Understands accountability. </li>
-          </ul>
-        </div>
-
-        <div class="growing">
-          <span class="pill">Growing People</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Mentoring &amp; Coaching</span>
-              Seeks out mentorship and coaching to grow their own experience.
-            </li>
-            <li>
-              <span class="highlight underline">Career Development</span>
-              Identifies opportunities to grow their strengths and weaknesses. Works with their manager to define career goals.
-            </li>
-          </ul>
-        </div>
-
-        <div class="team">
-          <span class="pill">Team Leading</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
-              Understands and works towards shared goals of the team that align to company goals.
-            </li>
-            <li>
-              <span class="highlight underline">Expectation Management</span>
-              Takes responsibility for delivering on time and communicates progress of their work.
-            </li>
-          </ul>
-        </div>
-
-        <a class="link" id="show-junior-all" onclick="showAll('junior')">+ Show All Competencies</a>
-        <a class="link hide" id="hide-junior-all" onclick="hideAll('junior')">+ Hide Other Competencies</a>
-      </div>
-      <div class="right col">
-        <div class=title>Examples</div>
-        <a class="show link" id="junior-show" onclick="showExamples('junior')">+ show examples</a>
-        <a class="hide link" id="junior-hide" onclick="hideExamples('junior')">- hide examples</a>
-        <ul class="hide" id="junior-examples">
-          <li>Took the initiative to ask someone in the team to explain CI/CI pipeline and how it's configured to learn</li>
-          <li>Shares opportunities for improvements and recognises achievements</li>
-        </ul>
-      </div>
-      
+    <div class="nav">
+      <a href="index.html">
+        <span class="item">TECHNICAL</span>
+      </a>
+      <a href="communication.html">
+        <span class="item">COMMUNICATION, FEEDBACK, COLLABORATION & COMMUNITY</span>
+      </a>
+      <a href="leadership.html">
+        <span class="item selected">
+          LEADERSHIP
+        </span>
+      </a>
+      <a href="delivery.html">
+        <span class="item">
+          DELIVERY &AMP; EFFECTIVENESS
+        </span>
+      </a>
+      <a href="strategy.html">
+        <span class="item">STRATEGY</span>
+      </a>
     </div>
 
-    <!--Mid Level-->
-    <div class="row even">
-      
-      <div class="left col">
-        <span class=title>E2: Engineer II</span>
-        <p><span class=focus>FOCUS: <br/>Within Epic</span></p>
-        <a href="https://tinyurl.com/e360-engineer-ii" target="_blank" class="link underline">Role Expectations</a>
+    <!--header-->
+    <div class="header">
+      <div class="skill-header">
+
+        <h1>Leadership</h1>
+        <a href="#facilitation" onclick="changeSkill('facilitation')">
+          <div class="competencies selected" id="facilitation-header">
+            <div class="headerbox">
+              <div class=header1>Facilitation</div>
+            </div>
+            <div class=summary>Leads forums and ensures everyone has an opportunity to share opinions and be heard.
+            </div>
+            <div class=sub-skills>
+              <span class="text">&#x25D7;&nbsp;Facilitation</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#decision" onclick="changeSkill('decision')">
+          <div class="competencies" id="decision-header">
+            <div class="headerbox">
+              <span class=header1>Decision Making</span>
+            </div>
+            <div class=summary>
+              Makes decisions in line with the company goals and mission and demonstrates accountability for decisions.
+            </div>
+            <div class="sub-skills">
+              <span class="text">&#x25D7;&nbsp;Decision Making</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#growing" onclick="changeSkill('growing')">
+          <div class="competencies" id="growing-header">
+            <div class="headerbox">
+              <span class=header1>Growing People</span>
+            </div>
+            <div class=summary>
+              Provides strategic support to colleagues, spreads knowledge, and develops the team.
+              Promotes a culture of learning and development
+            </div>
+            <div class="sub-skills">
+              <span class="text">&#x25D7;&nbsp;Mentoring</span>
+              <span class="text">&#x25D7;&nbsp;Coaching</span>
+              <span class="text">&#x25D7;&nbsp;Career Development</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#team" onclick="changeSkill('team')">
+          <div class="competencies" id="team-header">
+            <div class="headerbox">
+              <span class=header1>Team Leading</span>
+            </div>
+            <div class=summary>
+              Drives alignment on the company strategy and goals are understood.
+              <br />Successfully manages expectations, commitments and progress.
+            </div>
+            <div class="sub-skills">
+              <span class="text">&#x25D7;&nbsp;Motivating Others</span>
+              <span class="text">&#x25D7;&nbsp;Driving Alignment</span>
+              <span class="text">&#x25D7;&nbsp;Expectation Management</span>
+            </div>
+          </div>
+        </a>
+
       </div>
-
-      <div class="middle" id="mid-skills">
-        <div class="facilitation show">
-          <span class="pill">Facilitation</span>
-          <ul>
-            <li>n/a (not applicable at this level)</li>
-          </ul>
-        </div>
-
-        <div class="decision">
-          <span class="pill">Decision Making</span>
-          <ul>
-            <li>Strives to be objective and reflects on their own biases when making decisions.
-              <br/>Makes decisions aligned to the overall team objectives and company mission.
-              <br/>Holds themselves accountable for decision and outcomes.
-            </li>
-          </ul>
-        </div>
-
-        <div class="growing">
-          <span class="pill">Growing People</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Mentoring &amp; Coaching</span>
-              Seeks out mentorship and coaching to grow their own experience.
-              <br/>Sometimes mentors their teammates in an open, respectful, flexible, empathetic manner.</li>
-            <li>
-              <span class="highlight underline">Career Development</span>
-              Identifies opportunities to grow their strengths and weaknesses.
-              <br/>Works with their manager to define career goals. Helps others on understanding a technical topic.
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="team">
-          <span class="pill">Team Leading</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
-              Understands and works towards shared goals of the team that align to company goals.
-            </li>
-            <li>
-              <span class="highlight underline">Expectation Management</span>
-              Takes responsibility for delivering on time and communicates progress of their work.
-            </li>
-          </ul>
-        </div>
-        <a class="link" id="show-mid-all" onclick="showAll('mid')">+ Show All Competencies</a>
-        <a class="link hide" id="hide-mid-all" onclick="hideAll('mid')">+ Hide Other Competencies</a>
-      </div>
-
-      <div class="right col">
-        <a class="show link" id="mid-show" onclick="showExamples('mid')">+ show examples</a>
-        <a class="hide link" id="mid-hide" onclick="hideExamples('mid')">- hide examples</a>
-        <ul class="hide" id="mid-examples">
-          <li>Acted as an onboarding buddy</li>
-          <li>Paired with an engineer to help them with an unfamiliar area</li>
-          <li>Asked to shadow another engineer to learn about monitoring</li>
-          <li>Creates space for people to talk through challenges</li>
-        </ul>
-      </div>
-      
     </div>
 
-    <!--Senior-->
-    <div class="row">
-      
-      <div class="left col">
-        <span class=title>E3: Senior<br/>Engineer</span>
-        <p><span class=focus>FOCUS: <br/>Within Team</span></p>
-        <a href="https://tinyurl.com/e360-engineer-iii" target="_blank" class="link underline">Role Expectations</a>
+    <div class="main">
+      <!--Junior-->
+      <div class="row">
+
+        <div class="left col">
+          <span class=title>E1: Engineer I</span>
+          <p><span class=focus>FOCUS: <br />Within Task</span></p>
+          <a href="https://tinyurl.com/e360-engineer-i" target="_blank" class="link underline">Role Expectations</a>
+        </div>
+        <div class="middle" id="junior-skills">
+
+          <div class="facilitation">
+            <span class="pill">Facilitation</span>
+            <ul>
+              <li>n/a (not applicable at this level)</li>
+            </ul>
+          </div>
+          <div class="decision">
+            <span class="pill">Decision Making</span>
+            <ul>
+              <li>Makes decisions aligned to the overall team objectives. Understands accountability. </li>
+            </ul>
+          </div>
+
+          <div class="growing">
+            <span class="pill">Growing People</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Mentoring &amp; Coaching</span>
+                Seeks out mentorship and coaching to grow their own experience.
+              </li>
+              <li>
+                <span class="highlight underline">Career Development</span>
+                Identifies opportunities to grow their strengths and weaknesses. Works with their manager to define
+                career goals.
+              </li>
+            </ul>
+          </div>
+
+          <div class="team">
+            <span class="pill">Team Leading</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
+                Understands and works towards shared goals of the team that align to company goals.
+              </li>
+              <li>
+                <span class="highlight underline">Expectation Management</span>
+                Takes responsibility for delivering on time and communicates progress of their work.
+              </li>
+            </ul>
+          </div>
+
+          <a class="link" id="show-junior-all" onclick="showAll('junior')">+ Show All Competencies</a>
+          <a class="link hide" id="hide-junior-all" onclick="hideAll('junior')">+ Hide Other Competencies</a>
+        </div>
+        <div class="right col">
+          <div class=title>Examples</div>
+          <a class="show link" id="junior-show" onclick="showExamples('junior')">+ show examples</a>
+          <a class="hide link" id="junior-hide" onclick="hideExamples('junior')">- hide examples</a>
+          <ul class="hide" id="junior-examples">
+            <li>Took the initiative to ask someone in the team to explain CI/CI pipeline and how it's configured to
+              learn</li>
+            <li>Shares opportunities for improvements and recognises achievements</li>
+          </ul>
+        </div>
+
       </div>
 
-      <div class="middle" id="senior-skills">
-        <div class="facilitation show">
-          <span class="pill">Facilitation</span>
-          <ul>
-            <li>Facilitates discussions within their team,
-              ensuring that everyone has an opportunity to share their opinion and be heard,
-              and that discussion outcomes tie to stated goals.
-              <br/>Encourages quiet participants and ensures no one person dominates the conversation.</li>
+      <!--Mid Level-->
+      <div class="row even">
+
+        <div class="left col">
+          <span class=title>E2: Engineer II</span>
+          <p><span class=focus>FOCUS: <br />Within Epic</span></p>
+          <a href="https://tinyurl.com/e360-engineer-ii" target="_blank" class="link underline">Role Expectations</a>
+        </div>
+
+        <div class="middle" id="mid-skills">
+          <div class="facilitation show">
+            <span class="pill">Facilitation</span>
+            <ul>
+              <li>n/a (not applicable at this level)</li>
+            </ul>
+          </div>
+
+          <div class="decision">
+            <span class="pill">Decision Making</span>
+            <ul>
+              <li>Strives to be objective and reflects on their own biases when making decisions.
+                <br />Makes decisions aligned to the overall team objectives and company mission.
+                <br />Holds themselves accountable for decision and outcomes.
+              </li>
+            </ul>
+          </div>
+
+          <div class="growing">
+            <span class="pill">Growing People</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Mentoring &amp; Coaching</span>
+                Seeks out mentorship and coaching to grow their own experience.
+                <br />Sometimes mentors their teammates in an open, respectful, flexible, empathetic manner.
+              </li>
+              <li>
+                <span class="highlight underline">Career Development</span>
+                Identifies opportunities to grow their strengths and weaknesses.
+                <br />Works with their manager to define career goals. Helps others on understanding a technical topic.
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="team">
+            <span class="pill">Team Leading</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
+                Understands and works towards shared goals of the team that align to company goals.
+              </li>
+              <li>
+                <span class="highlight underline">Expectation Management</span>
+                Takes responsibility for delivering on time and communicates progress of their work.
+              </li>
+            </ul>
+          </div>
+          <a class="link" id="show-mid-all" onclick="showAll('mid')">+ Show All Competencies</a>
+          <a class="link hide" id="hide-mid-all" onclick="hideAll('mid')">+ Hide Other Competencies</a>
+        </div>
+
+        <div class="right col">
+          <a class="show link" id="mid-show" onclick="showExamples('mid')">+ show examples</a>
+          <a class="hide link" id="mid-hide" onclick="hideExamples('mid')">- hide examples</a>
+          <ul class="hide" id="mid-examples">
+            <li>Acted as an onboarding buddy</li>
+            <li>Paired with an engineer to help them with an unfamiliar area</li>
+            <li>Asked to shadow another engineer to learn about monitoring</li>
+            <li>Creates space for people to talk through challenges</li>
           </ul>
         </div>
 
-        <div class="decision">
-          <span class="pill">Decision Making</span>
-          <ul>
-            <li>Strives to be objective and reflects on their own biases when making decisions.
-              <br/>Makes decisions aligned to the overall team objectives and company mission.
-              <br/>Holds themselves accountable for decision and outcomes.</li>
-          </ul>
-        </div>
-
-        <div class="growing">
-          <span class="pill">Growing People</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Mentoring &amp; Coaching</span>
-              Mentors their teammates in an open, respectful, flexible, empathetic manner.
-              <br/>Developing techniques on effective coaching strategies for different individuals.
-              <br/>Seeks out mentoring opportunities specifically to increase knowledge in parts of the system that is not well understood.</li>
-            <li>
-              <span class="highlight underline">Career Development</span>
-              Identifies opportunities to grow their strengths and weaknesses and defines their career goals.
-              <br/>Supports and advocates others and provides tools to help them grow their understanding a technical topic.
-            </li>
-          </ul>
-        </div>
-
-        <div class="team">
-          <span class="pill">Team Leading</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
-              Understands and works towards the <span class="highlight">strategy and core principles</span> that align to company goals.
-            </li>
-            <li>
-              <span class="highlight underline">Expectation Management</span>
-              Takes responsibility for delivering on time, proactively communicates progress of their
-              work and issues that arise.
-            </li>
-          </ul>
-        </div>
-        <a class="link" id="show-senior-all" onclick="showAll('senior')">+ Show All Competencies</a>
-        <a class="link hide" id="hide-senior-all" onclick="hideAll('senior')">+ Hide Other Competencies</a>
       </div>
-      <div class="right col">
-        <div class=title>Examples</div>
-        <a class="show link" id="senior-show" onclick="showExamples('senior')">+ show examples</a>
-        <a class="hide link" id="senior-hide" onclick="hideExamples('senior')">- hide examples</a>
-        <ul class="hide" id="senior-examples">
-          <li>Answers questions on a technical topic and provides useful resources for others to learn</li>
-          <li>Takes ownership of a converting from Flow to Typescript and helps others with the migration</li>
-          <li>Runs a guild meeting</li>
-          <li>Pairs with a team member to teach them what is and how to use Kubernetes</li>
-        </ul>
+
+      <!--Senior-->
+      <div class="row">
+
+        <div class="left col">
+          <span class=title>E3: Senior<br />Engineer</span>
+          <p><span class=focus>FOCUS: <br />Within Team</span></p>
+          <a href="https://tinyurl.com/e360-engineer-iii" target="_blank" class="link underline">Role Expectations</a>
+        </div>
+
+        <div class="middle" id="senior-skills">
+          <div class="facilitation show">
+            <span class="pill">Facilitation</span>
+            <ul>
+              <li>Facilitates discussions within their team,
+                ensuring that everyone has an opportunity to share their opinion and be heard,
+                and that discussion outcomes tie to stated goals.
+                <br />Encourages quiet participants and ensures no one person dominates the conversation.
+              </li>
+            </ul>
+          </div>
+
+          <div class="decision">
+            <span class="pill">Decision Making</span>
+            <ul>
+              <li>Strives to be objective and reflects on their own biases when making decisions.
+                <br />Makes decisions aligned to the overall team objectives and company mission.
+                <br />Holds themselves accountable for decision and outcomes.
+              </li>
+            </ul>
+          </div>
+
+          <div class="growing">
+            <span class="pill">Growing People</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Mentoring &amp; Coaching</span>
+                Mentors their teammates in an open, respectful, flexible, empathetic manner.
+                <br />Developing techniques on effective coaching strategies for different individuals.
+                <br />Seeks out mentoring opportunities specifically to increase knowledge in parts of the system that
+                is not well understood.
+              </li>
+              <li>
+                <span class="highlight underline">Career Development</span>
+                Identifies opportunities to grow their strengths and weaknesses and defines their career goals.
+                <br />Supports and advocates others and provides tools to help them grow their understanding a technical
+                topic.
+              </li>
+            </ul>
+          </div>
+
+          <div class="team">
+            <span class="pill">Team Leading</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
+                Understands and works towards the <span class="highlight">strategy and core principles</span> that align
+                to company goals.
+              </li>
+              <li>
+                <span class="highlight underline">Expectation Management</span>
+                Takes responsibility for delivering on time, proactively communicates progress of their
+                work and issues that arise.
+              </li>
+            </ul>
+          </div>
+          <a class="link" id="show-senior-all" onclick="showAll('senior')">+ Show All Competencies</a>
+          <a class="link hide" id="hide-senior-all" onclick="hideAll('senior')">+ Hide Other Competencies</a>
+        </div>
+        <div class="right col">
+          <div class=title>Examples</div>
+          <a class="show link" id="senior-show" onclick="showExamples('senior')">+ show examples</a>
+          <a class="hide link" id="senior-hide" onclick="hideExamples('senior')">- hide examples</a>
+          <ul class="hide" id="senior-examples">
+            <li>Answers questions on a technical topic and provides useful resources for others to learn</li>
+            <li>Takes ownership of a converting from Flow to Typescript and helps others with the migration</li>
+            <li>Runs a guild meeting</li>
+            <li>Pairs with a team member to teach them what is and how to use Kubernetes</li>
+          </ul>
+        </div>
+
       </div>
-      
+
+      <!--Team Lead-->
+      <div class="row even">
+
+        <div class="left col">
+          <span class=title>E4: Development Lead</span>
+          <p><span class=focus>FOCUS: <br />Within Team and Stakeholders</span></p>
+          <a href="https://tinyurl.com/e360-devlead" target="_blank" class="link underline">Role Expectations</a>
+        </div>
+
+        <div class="middle" id="teamlead-skills">
+          <div class="facilitation show">
+            <span class="pill">Facilitation</span>
+            <ul>
+              <li>
+                Facilitates discussions within their team, ensuring that everyone has an opportunity to share their
+                opinion and be heard, and that discussion outcomes tie to stated goals.
+                <br />Encourages quiet participants and ensures no one person dominates the conversation.
+              </li>
+            </ul>
+          </div>
+
+          <div class="decision">
+            <span class="pill">Decision Making</span>
+            <ul>
+              <li>Takes ownership of decisions made in their team by helping their teammates make clear decisions in
+                alignment with organisational goals,
+                backing decisions made, and taking responsibility for their success. Helps define the team's roadmap in
+                line with the company and technology vision.
+                <br />Ensures accountability is practiced within their team. Demonstrates these behaviours themselves.
+              </li>
+            </ul>
+          </div>
+
+          <div class="growing">
+            <span class="pill">Growing People</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Mentoring &amp; Coaching</span>
+                Mentors their teammates in an open, respectful, flexible, empathetic manner. Uses effective coaching
+                strategies for different individuals.
+                <br />Seeks out mentoring opportunities specifically to increase knowledge in parts of the system that
+                is not well understood.
+                <br />Mentors members of other teams as needed.
+              </li>
+              <li>
+                <span class="highlight underline">Career Development</span>
+                Inspires and retains a small group of people and actively pushes them to stretch themselves.
+                <br />Helps their team define their career goals and provides opportunities for them to grow
+              </li>
+            </ul>
+          </div>
+
+          <div class="team">
+            <span class="pill">Team Leading</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
+                <span class="highlight">Ensures the team</span> understand the strategy and core-principles to align to
+                the company goals
+              </li>
+              <li>
+                <span class="highlight underline">Expectation Management</span>
+                Anticipates and communicates blockers and delays, and cost ballooning within their team’s projects,
+                before they require escalation with suggested solutions.
+                <br />Ensures expectations with their team and external stakeholders are clarified between all parties
+                involved.
+              </li>
+            </ul>
+          </div>
+          <a class="link" id="show-teamlead-all" onclick="showAll('teamlead')">+ Show All Competencies</a>
+          <a class="link hide" id="hide-teamlead-all" onclick="hideAll('teamlead')">+ Hide Other Competencies</a>
+        </div>
+
+        <div class="right col">
+          <div class=title>Examples</div>
+          <a class="show link" id="teamlead-show" onclick="showExamples('teamlead')">+ show examples</a>
+          <a class="hide link" id="teamlead-hide" onclick="hideExamples('teamlead')">- hide examples</a>
+          <ul class="hide" id="teamlead-examples">
+            <li>Discusses paths, and creates plans for personal and professional growth</li>
+            <li>Works quickly to align the team when they need clarification on goals</li>
+            <li>Facilitates and runs meetings on technical planning for a project</li>
+            <li>Lead team discussions and research to identify risks. Front loads these risk in projects and
+              communicates these early to stakeholders</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!--Engineering Manager-->
+      <div class="row">
+
+        <div class="left col">
+          <span class=title>E5: Engineering Manager</span>
+          <p><span class=focus>FOCUS: <br />Across Several Teams</span></p>
+          <a href="https://tinyurl.com/e360-eng-mgr" target="_blank" class="link underline">Role Expectations</a>
+        </div>
+
+        <div class="middle" id="em-skills">
+          <div class="facilitation show">
+            <span class="pill">Facilitation</span>
+            <ul>
+              <li>Facilitates discussions <span class="highlight">across teams</span>, ensuring that everyone has an
+                opportunity to share their opinion and be heard,
+                and that discussion outcomes tie to stated goals.
+                <br /><span class="highlight">Ensures relevant parties are included in discussions.</span>
+                <br /><span class="highlight">Guides discussions toward decisions, clarifies and gets buy-in.</span>
+                <br /><span class="highlight">Ensures decisions are communicated to stakeholders</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="decision">
+            <span class="pill">Decision Making</span>
+            <ul>
+              <li>
+                Takes ownership of decisions made <span class="highlight">across teams</span> by helping them make clear
+                decisions in alignment with organisational goals,
+                backing decisions made, and taking responsibility for their success.
+                <br /><span class="highlight">Solicits input from team but makes decisions where necessary, even if
+                  consensus can’t be reached</span>
+                <br />Helps create the team's roadmap for a <span class="highlight">group of teams</span> in line with
+                the company and technology vision.
+                <br />Ensures accountability is practiced <span class="highlight">throughout those teams</span>.
+                Demonstrates these behaviours themselves.
+              </li>
+            </ul>
+          </div>
+
+          <div class="growing">
+            <span class="pill">Growing People</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Mentoring &amp; Coaching</span>
+                Mentors <span class="highlight">direct reports and skips</span> in an open, respectful, flexible,
+                empathetic manner.
+                <br />
+                <span class="highlight">Fosters a culture of mentoring across teams by seeking out mentoring and
+                  coaching opportunities
+                  for themselves and others, and supports others in their growth as mentors.</span>
+              </li>
+              <li>
+                <span class="highlight underline">Career Development</span>
+                <span class="highlight">
+                  Manages interactions and processes between groups, promoting best practices and setting a positive
+                  example.
+                  <br />Ensures all group members' roles are meeting their career needs
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="team">
+            <span class="pill">Team Leading</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
+                Ensures <span class="highlight">that teams</span> understand the strategy and core-principles to align
+                to the company goals
+              </li>
+              <li>
+                <span class="highlight underline">Expectation Management</span>
+                <span class="highlight">Anticipates</span> and communicates blockers, delays, and cost ballooning <span
+                  class="highlight">across teams, before they require escalation</span> with suggested solutions.
+                <br /><span class="highlight">Works to understand the ROI on engineering work and challenges, guides
+                  where ROI is lacking or does not align with business goals</span>
+                <br />Ensures expectations <span class="highlight">across teams and stakeholders</span> are clarified
+                between all parties involved.
+              </li>
+            </ul>
+          </div>
+          <a class="link" id="show-em-all" onclick="showAll('em')">+ Show All Competencies</a>
+          <a class="link hide" id="hide-em-all" onclick="hideAll('em')">+ Hide Other Competencies</a>
+        </div>
+        <div class="right col">
+          <div class=title>Examples</div>
+          <a class="show link" id="em-show" onclick="showExamples('em')">+ show examples</a>
+          <a class="hide link" id="em-hide" onclick="hideExamples('em')">- hide examples</a>
+          <ul class="hide" id="em-examples">
+            <li>Builds a resourcing plan based on company, team and individual goals</li>
+            <li>Facilitated a workshop for the engineering team</li>
+            <li>Worked with a group of teams to identify risks across multiple systems in a project</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!--VP Eng-->
+      <div class="row even">
+
+        <div class="left col">
+          <span class=title>E6: VP Engineering</span>
+          <p><span class=focus>FOCUS: <br />Across Organisation</span></p>
+        </div>
+
+        <div class="middle" id="vp-skills">
+          <div class="facilitation show">
+            <span class="pill">Facilitation</span>
+            <ul>
+              <li>Facilitates <span class="highlight">organization-wide</span> discussions, ensuring that everyone has
+                an opportunity to share their opinion and be heard, and that discussion outcomes tie to stated goals.
+                <br />Encourages quiet participants and ensures no one person dominates the conversation.
+                <br /><span class="highlight">Provides guidance</span> on team decisions when necessary
+              </li>
+            </ul>
+          </div>
+
+          <div class="decision">
+            <span class="pill">Decision Making</span>
+            <ul>
+              <li>
+                Takes ownership of decisions made in the engineering organisation by helping organisation members make
+                clear decisions in alignment with organisational goals,
+                backing decisions made, and taking responsibility for their success.
+                <br />Ensures accountability is practiced throughout the organization.
+                <br />Demonstrates these behaviours themselves.
+              </li>
+            </ul>
+          </div>
+
+          <div class="growing">
+            <span class="pill">Growing People</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Mentoring &amp; Coaching</span>
+                <span class="highlight">Mentors across the organisation</span> in an open, respectful, flexible,
+                empathetic manner.
+                <br />Fosters an <span class="highlight">organisational culture</span> of mentoring and coaching by
+                seeking out mentoring opportunities for themselves and others, and supports others in their growth as
+                mentors.
+              </li>
+              <li>
+                <span class="highlight underline">Career Development</span>
+                <span class="highlight">Inspires and supports</span> the development of a signficant part of the
+                engineering org, and widely viewed as a <span class="highlight">trusted advisor</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="team">
+            <span class="pill">Team Leading</span>
+            <ul>
+              <li>
+                <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
+                Fosters a culture <span class="highlight">across the organisation</span> of having conversations based
+                on
+                <span class="highlight">organisational strategy</span> and principles to create alignment.
+                <br /><span class="highlight">Motivates</span> and ensures <span class="highlight">goals are
+                  understood</span> and continuously worked towards across the organisation.
+              </li>
+              <li>
+                <span class="highlight underline">Expectation Management</span>
+                Successfully manages <span class="highlight">organisation-wide</span> commitments, their progress, and
+                roadmap to delivery.
+                <br />Ensures expectations across the <span class="highlight">organisation</span> and external
+                stakeholders are clarified between all parties involved.
+              </li>
+            </ul>
+          </div>
+          <a class="link" id="show-vp-all" onclick="showAll('vp')">+ Show All Competencies</a>
+          <a class="link hide" id="hide-vp-all" onclick="hideAll('vp')">+ Hide Other Competencies</a>
+        </div>
+
+        <div class="right col">
+          <div class=title>Examples</div>
+          <a class="show link" id="vp-show" onclick="showExamples('vp')">+ show examples</a>
+          <a class="hide link" id="vp-hide" onclick="hideExamples('vp')">- hide examples</a>
+          <ul class="hide" id="vp-examples">
+            <li>Identified leadership training opportunities for senior leadership</li>
+          </ul>
+        </div>
+
+      </div>
+
     </div>
-
-    <!--Team Lead-->
-    <div class="row even">
-      
-      <div class="left col">
-        <span class=title>E4: Development Lead</span>
-        <p><span class=focus>FOCUS: <br/>Within Team and Stakeholders</span></p>
-        <a href="https://tinyurl.com/e360-devlead" target="_blank" class="link underline">Role Expectations</a>
-      </div>
-
-      <div class="middle" id="teamlead-skills">
-        <div class="facilitation show">
-          <span class="pill">Facilitation</span>
-          <ul>
-            <li>
-              Facilitates discussions within their team, ensuring that everyone has an opportunity to share their opinion and be heard, and that discussion outcomes tie to stated goals.
-              <br/>Encourages quiet participants and ensures no one person dominates the conversation.
-            </li>
-          </ul>
-        </div>
-
-        <div class="decision">
-          <span class="pill">Decision Making</span>
-          <ul>
-            <li>Takes ownership of decisions made in their team by helping their teammates make clear decisions in alignment with organisational goals,
-            backing decisions made, and taking responsibility for their success. Helps define the team's roadmap in line with the company and technology vision.
-            <br/>Ensures accountability is practiced within their team. Demonstrates these behaviours themselves.
-            </li>
-          </ul>
-        </div>
-
-        <div class="growing">
-          <span class="pill">Growing People</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Mentoring &amp; Coaching</span>
-              Mentors their teammates in an open, respectful, flexible, empathetic manner.  Uses effective coaching strategies for different individuals.
-              <br/>Seeks out mentoring opportunities specifically to increase knowledge in parts of the system that is not well understood.
-              <br/>Mentors members of other teams as needed.</li>
-            <li>
-              <span class="highlight underline">Career Development</span>
-              Inspires and retains a small group of people and actively pushes them to stretch themselves.
-              <br/>Helps their team define their career goals and provides opportunities for them to grow
-            </li>
-          </ul>
-        </div>
-
-        <div class="team">
-          <span class="pill">Team Leading</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
-              <span class="highlight">Ensures the team</span> understand the strategy and core-principles to align to the company goals</li>
-            <li>
-              <span class="highlight underline">Expectation Management</span>
-              Anticipates and communicates blockers and delays, and cost ballooning within their team’s projects, before they require escalation with suggested solutions.
-              <br/>Ensures expectations with their team and external stakeholders are clarified between all parties involved.
-            </li>
-          </ul>
-        </div>
-        <a class="link" id="show-teamlead-all" onclick="showAll('teamlead')">+ Show All Competencies</a>
-        <a class="link hide" id="hide-teamlead-all" onclick="hideAll('teamlead')">+ Hide Other Competencies</a>
-      </div>
-
-      <div class="right col">
-        <div class=title>Examples</div>
-        <a class="show link" id="teamlead-show" onclick="showExamples('teamlead')">+ show examples</a>
-        <a class="hide link" id="teamlead-hide" onclick="hideExamples('teamlead')">- hide examples</a>
-        <ul class="hide" id="teamlead-examples">
-          <li>Discusses paths, and creates plans for personal and professional growth</li>
-          <li>Works quickly to align the team when they need clarification on goals</li>
-          <li>Facilitates and runs meetings on technical planning for a project</li>
-          <li>Lead team discussions and research to identify risks. Front loads these risk in projects and communicates these early to stakeholders</li>
-        </ul>
-      </div>
-      
-    </div>
-
-    <!--Engineering Manager-->
-    <div class="row">
-      
-      <div class="left col">
-        <span class=title>E5: Engineering Manager</span>
-        <p><span class=focus>FOCUS: <br/>Across Several Teams</span></p>
-        <a href="https://tinyurl.com/e360-eng-mgr" target="_blank" class="link underline">Role Expectations</a>
-      </div>
-
-      <div class="middle" id="em-skills">
-        <div class="facilitation show">
-          <span class="pill">Facilitation</span>
-          <ul>
-            <li>Facilitates discussions <span class="highlight">across teams</span>, ensuring that everyone has an opportunity to share their opinion and be heard,
-              and that discussion outcomes tie to stated goals.
-              <br/><span class="highlight">Ensures relevant parties are included in discussions.</span>
-              <br/><span class="highlight">Guides discussions toward decisions, clarifies and gets buy-in.</span>
-              <br/><span class="highlight">Ensures decisions are communicated to stakeholders</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="decision">
-          <span class="pill">Decision Making</span>
-          <ul>
-            <li>
-              Takes ownership of decisions made <span class="highlight">across teams</span> by helping them make clear decisions in alignment with organisational goals,
-              backing decisions made, and taking responsibility for their success.
-              <br/><span class="highlight">Solicits input from team but makes decisions where necessary, even if consensus can’t be reached</span>
-              <br/>Helps create the team's roadmap for a <span class="highlight">group of teams</span> in line with the company and technology vision.
-              <br/>Ensures accountability is practiced <span class="highlight">throughout those teams</span>. Demonstrates these behaviours themselves.
-            </li>
-          </ul>
-        </div>
-
-        <div class="growing">
-          <span class="pill">Growing People</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Mentoring &amp; Coaching</span>
-              Mentors <span class="highlight">direct reports and skips</span> in an open, respectful, flexible, empathetic manner.
-              <br/>
-              <span class="highlight">Fosters a culture of mentoring across teams by seeking out mentoring and coaching opportunities
-                for themselves and others, and supports others in their growth as mentors.</span>
-            </li>
-            <li>
-              <span class="highlight underline">Career Development</span>
-              <span class="highlight">
-              Manages interactions and processes between groups, promoting best practices and setting a positive
-              example.
-              <br/>Ensures all group members' roles are meeting their career needs
-              </span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="team">
-          <span class="pill">Team Leading</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
-              Ensures <span class="highlight">that teams</span> understand the strategy and core-principles to align to the company goals
-            </li>
-            <li>
-              <span class="highlight underline">Expectation Management</span>
-              <span class="highlight">Anticipates</span> and communicates blockers, delays, and cost ballooning <span class="highlight">across teams, before they require escalation</span> with suggested solutions.
-              <br/><span class="highlight">Works to understand the ROI on engineering work and challenges, guides where ROI is lacking or does not align with business goals</span>
-              <br/>Ensures expectations <span class="highlight">across teams and stakeholders</span> are clarified between all parties involved.
-            </li>
-          </ul>
-        </div>
-        <a class="link" id="show-em-all" onclick="showAll('em')">+ Show All Competencies</a>
-        <a class="link hide" id="hide-em-all" onclick="hideAll('em')">+ Hide Other Competencies</a>
-      </div>
-      <div class="right col">
-        <div class=title>Examples</div>
-        <a class="show link" id="em-show" onclick="showExamples('em')">+ show examples</a>
-        <a class="hide link" id="em-hide" onclick="hideExamples('em')">- hide examples</a>
-        <ul class="hide" id="em-examples">
-          <li>Builds a resourcing plan based on company, team and individual goals</li>
-          <li>Facilitated a workshop for the engineering team</li>
-          <li>Worked with a group of teams to identify risks across multiple systems in a project</li>
-        </ul>
-      </div>
-      
-    </div>
-
-    <!--VP Eng-->
-    <div class="row even">
-      
-      <div class="left col">
-        <span class=title>E6: VP Engineering</span>
-        <p><span class=focus>FOCUS: <br/>Across Organisation</span></p>
-      </div>
-
-      <div class="middle" id="vp-skills">
-        <div class="facilitation show">
-          <span class="pill">Facilitation</span>
-          <ul>
-            <li>Facilitates <span class="highlight">organization-wide</span> discussions, ensuring that everyone has an opportunity to share their opinion and be heard, and that discussion outcomes tie to stated goals.
-              <br/>Encourages quiet participants and ensures no one person dominates the conversation.
-              <br/><span class="highlight">Provides guidance</span> on team decisions when necessary
-            </li>
-          </ul>
-        </div>
-
-        <div class="decision">
-          <span class="pill">Decision Making</span>
-          <ul>
-            <li>
-              Takes ownership of decisions made in the engineering organisation by helping organisation members make clear decisions in alignment with organisational goals,
-              backing decisions made, and taking responsibility for their success.
-              <br/>Ensures accountability is practiced throughout the organization.
-              <br/>Demonstrates these behaviours themselves.</li>
-          </ul>
-        </div>
-
-        <div class="growing">
-          <span class="pill">Growing People</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Mentoring &amp; Coaching</span>
-              <span class="highlight">Mentors across the organisation</span> in an open, respectful, flexible, empathetic manner.
-              <br/>Fosters an <span class="highlight">organisational culture</span> of mentoring and coaching by seeking out mentoring opportunities for themselves and others, and supports others in their growth as mentors.
-            </li>
-            <li>
-              <span class="highlight underline">Career Development</span>
-              <span class="highlight">Inspires and supports</span> the development of a signficant part of the engineering org, and widely viewed as a <span class="highlight">trusted advisor</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="team">
-          <span class="pill">Team Leading</span>
-          <ul>
-            <li>
-              <span class="highlight underline">Motivating Others &amp; Driving Alignment</span>
-              Fosters a culture <span class="highlight">across the organisation</span> of having conversations based on
-              <span class="highlight">organisational strategy</span> and principles to create alignment.
-              <br/><span class="highlight">Motivates</span> and ensures <span class="highlight">goals are understood</span> and continuously worked towards across the organisation.</li>
-            <li>
-              <span class="highlight underline">Expectation Management</span>
-              Successfully manages <span class="highlight">organisation-wide</span> commitments, their progress, and roadmap to delivery.
-              <br/>Ensures expectations across the <span class="highlight">organisation</span> and external stakeholders are clarified between all parties involved.</li>
-          </ul>
-        </div>
-        <a class="link" id="show-vp-all" onclick="showAll('vp')">+ Show All Competencies</a>
-        <a class="link hide" id="hide-vp-all" onclick="hideAll('vp')">+ Hide Other Competencies</a>
-      </div>
-
-      <div class="right col">
-        <div class=title>Examples</div>
-        <a class="show link" id="vp-show" onclick="showExamples('vp')">+ show examples</a>
-        <a class="hide link" id="vp-hide" onclick="hideExamples('vp')">- hide examples</a>
-        <ul class="hide" id="vp-examples">
-          <li>Identified leadership training opportunities for senior leadership</li>
-        </ul>
-      </div>
-      
-    </div>
-
   </div>
-</div>
 </body>
+
 </html>
