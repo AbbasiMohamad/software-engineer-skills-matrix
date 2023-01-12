@@ -1,6 +1,6 @@
 robust=قدرتمند
 reliable=قابل اعتماد
-troubleshoot=عیب یابی
+troubleshoot=اشکال‌زدایی
 architecture=معماری
 design=طراحی
 quality=کیفیت
@@ -9,7 +9,7 @@ stable=پایدار
 security=امنیت
 distributed systems=سیستم‌های توزیع شده
 observability=مشاهده‌پذیری
-debugging=اشکال‌زدایی
+debugging=اشکال‌یابی
 issues=مسائل
 issue=مسئله
 incident=حادثه
