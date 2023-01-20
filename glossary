@@ -34,3 +34,6 @@ feature=ویژگی
 edge case=حالت خاص
 data consistency=
 availability=
+business logic=منطق کسب‌وکار
+PR=pull request
+review=بازنگری
